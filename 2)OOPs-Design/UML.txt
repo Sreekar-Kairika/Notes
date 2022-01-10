@@ -1,0 +1,57 @@
+UML - Unified Modeling Language
+It is a standard way to visualisa the software design
+
+It is easy to communicate between Developers and Architects.
+
+Class Diagram & Sequence Diagram 
+
+CLASS DIAGRAM
+They are used to show different objects in a system
+
+Top :: Classname
+Middle :: Class Attributes
+Bottom :: Class Operation +Display():void
+
+-private +public #protected ~package/default
+
+
+Inheritance ::
+ 
+  Child -|> Parent , Parent is Abstarct Class 
+  
+
+Association 
+
+Teacher --> Subject   , Teacher HAS-A Subject
+
+Teacher <>--Deptartment , Aggregation
+
+Deptartment ----<*>DeptManager , Composition
+
+
+Sequence Diagram ::
+Type of UMLDiagram
+How objects and classes interact with each other during 
+runtime.
+
+Show sequence of events
+
+
+Person --  Actor , Out of scope of sequnece diagrams
+Objects are in -- Square
+
+Vertical Lines -- shows existance
+Now we start interaction
+
+When we get back  messages we denote by dashed Line.
+Dashed lines move from LEFT to RIGHT.
+
+
+Activation Boxes -- How long Objects are active
+
+
+
+IF INSTRUCTION -- USE SOLID Line
+IF its Reply,Return,Respone -- Use Dashed Line
+
+Alternative Frame is used to use IF/ELSE Cases

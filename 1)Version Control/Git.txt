@@ -1,0 +1,115 @@
+
+1)Git Add and Commit
+
+Git log shows us the past commits and time
+Log - shows commited files
+
+RED color - file in not staging area
+
+git add . 
+// file is staging area
+
+
+In Staging area color -GREEN
+
+Files wil be in Green Color in Staging Area , and they area
+not commited
+ 
+git log   // shows past commits
+git log -n 5 // shows last 5 commits
+git log --oneline // shows commit in one line
+git log --oneline --graph //
+
+
+touch pink.txt
+// creates a file called pink 
+
+
+---
+ls - list all files in branch
+
+cat new_file.txt // shows elements in a file 
+
+vi new_file.txt  // to open the file
+
+git pull to clone the repo
+
+--
+
+2 Restore and Checkout
+
+Working Repo - 
+Staging Area - after git add
+Commit - After Commiting
+
+
+pink.txt //Empty File
+pink.txt // This is change
+
+git diff
+// shows difference 
+If file is not staged we find no difference
+
+git restore --staged pink.tzt
+// to unstage a uncommited file
+
+git diff --staged
+// shows diff in only staged area files
+
+
+Git checkout is used to switch betwwen branches 
+there is no undo option for it.
+
+3)Branching
+
+git branch mybranch // creating a new branch
+
+git branch
+// shows exisiting branches 1)main 2)newbranch
+
+Changes made in mybranch are not reflected in main
+
+Before COMMITING we cannot find difference between branches
+
+
+git branch feature/uppercase
+  // greeting.txt --- convert to upper case
+
+
+In main
+git merge feature/uppercase
+// merges branch with main
+
+After Merging No Diff
+
+git branch -d feature/uppercase
+//deletes the branch remotely
+
+
+
+//CMD LINE INPUT TO File
+touch new_file.txt
+echo "Welcome to Cmd line input" >> new_file.txt
+
+
+git checkout mybranch
+// creates new branch
+git switch mybranch
+
+git checkout -b mybranch2
+// creates and swithches to new branch
+
+
+6)Git Merge Conflict
+
+Main branch 
+ 1)Devloper-1 branhces it makes changes in his ssystem
+ 2)Devloper-2 changes the main file directly
+ 3)Now th Devloper-1 want to push code
+   Firstly pull the previous code again and get code
+   edited by Devloper-2 and merge the branch 
+ 4)Now we get some merging conflict
+ 
+
+
+add commit staging-area

@@ -1,0 +1,263 @@
+
+Pre-requisite
+
+Class : User defined blue print
+set of attributes and beahviour
+variables and methods
+
+Every thing in World is OBJECT
+Dog - attribute --color
+       Behaviout -- walk, drink ,eat
+	   
+public class Fan{
+
+public void turnon()
+	  {
+	 
+	}
+public void turnoff()
+    {
+	
+	}
+}
+
+--- Variables
+
+Instance -Inside a class , outside a method , scope in class
+ Intalizes every time we create a object
+
+Local - Created inside methods ,constructor ot blocks
+creates when method is called
+
+Static - Only once intialized 
+
+
+Construcor -- Special Method
+Default
+Construcorcannot be abstract final static
+
+method
+
+
+----
+Packages
+It is a way of keeping group of classes and interfaces 
+subpackages which has similar  functionality.
+
+
+
+
+----
+Access Modifiers - Visibility
+
+public : Access any where
+default : inside the package
+private : inside that class only
+protected : same package and within the subclass
+
+Inner Classes: can be private
+
+--------
+Non-Access Modifier : Abstract ,final ,static
+
+Abstarct Class : It does not have full implementation
+Abstarct Method : Can be only definded , should in abstract class only
+
+Abstract method is implemented in Child Class
+
+
+----
+Naming Conventions
+
+
+---------
+
+OOPS  - It is a paradigm where we use Classes and Objects
+1)Abstarction
+2)Encapsultion
+3)Inheritance
+4)Polymorphism
+
+It helps us to maintain Cleaner , Reusable , 
+Maintainable , Scalable
+
+
+--
+
+Data Hiding:
+Hide internals object details from external 
+After Validation we have access to data
+Using private variables as Access Modofifers
+
+---
+Abstarction
+Hiding Internal Implementation
+
+Interfaces and Abstarct classes
+
+Abstarct classes cannot be Intial
+
+Interface is a blueprint of class
+Only have method declarations
+
+Data members in interface are static final.
+ Hiding data and Internal Implementation
+ 
+At interface 100% abstraction
+
+--------
+
+Encapsulation
+
+Grouping of data memebers and member functions in a 
+single unit is called Encapsulation.
+
+Dont class does and 
+
+Data Hiding + Abstarction = Encapsulation
+Setters and Getters
+
+----
+
+Inheritance:
+Creating a new class derving from Old Class
+
+Base Class --parent --super
+child - subclass - derived class
+
+Parent -> Child  -- Is-A relation
+
+
+Employee----->Manager
+	\
+	 \
+	  -->Manager 
+	  IS-A Relationship
+
+Types Of Inheritance:
+1)Single - 1 child ,1 parent , A-->Base
+
+2)Multi level  - A-->B-->C
+
+3) Hierarchical , 1 parent , 2 child
+    A-->B
+	 \->C 
+
+4)Multiple , C has two Parent --- Diamond Ambigity
+  Uses Interfaces , as we have only Declartion , no implementation
+
+5)Hybrid 
+
+
+
+Association -- HAS-A Relationship
+
+Establish relationship between two diffeent classes through
+objects.
+
+1)Aggregation
+2)Association
+
+Aggregation : If both entitys associated can exist independently.
+Code reuse is achieved by Aggregration 
+
+College has a Taecher
+//Teacher may have another college
+Office has a Employee
+
+Composition: Two entitys are highly dependent on each other
+
+A House has a Kitchen
+A Car has a Engine
+
+---------
+
+Polymorphism-- many forms
+Ability of object to take many forms 
+
+Method Overloading -- Same Name but different Arguments
+                       --Doesnot depend on return type
+
+Compile time Polymorphism -- Early Binding
+
+byte-->short-->int-->long-->float-->double
+Implicit Conversion
+
+
+Overriding: Runtime Polymorphism , Late Binding 
+
+JVM does Method Resolution
+
+base , child
+
+Base b = new Base()
+n.show() //Parent is called
+
+Derived d = new Derived()
+d.show() //Child
+
+
+Base obj = new Derived()
+//Refereence is Parent ,
+//Object is child 
+//but run-time resolution takes place so child is called
+
+Cannot override final and static method
+
+
+CAnnot Override Private Method as they have no scope.
+
+super keyword to involke Parent Class Method
+
+
+
+-----------------------
+
+Philosophy:
+
+Pillars of OOPS 
+
+1)Encapsulation - Restricting Direct Access , Bundling Data
+More Flexibele
+Easy Unit testing
+Reduce Coupling , Increase Cohesion
+
+2)Abstraction
+Hiding unnecessary details and provide window for customers
+
+Higher Abstarction -- Simplicity ,Trust
+Trust jdk download packages and use them
+
+ATM -- With drawing Money
+
+3)Inheritance
+We got things from Ancesstor and we make it better
+Overriding is used
+Extending the classes 
+
+4)Polymorphism
+makes many forms
+Overloading -- Compile time
+Overriding -- Runtime
+
+
+
+Why Interfaces?
+Higher level of Abstarction
+Can Implement at any time
+
+
+Cohesion :: Keep same things at same place
+Need High Cohesion
+Keep books in study room
+
+JDK keeps same classes at same place
+IO packages , 
+
+Coupling:: Connecting parts of machinary
+Loose Coupling is good
+
+A car manufacture loosley couples things ,
+they can be changed or updated easily
+
+Code Improment , Bug fixes , Easy Optimisation

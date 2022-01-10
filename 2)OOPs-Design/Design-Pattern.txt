@@ -1,0 +1,39 @@
+
+Design Patterns -- they are basket of pre defined solutions
+to commom patterns in OOPs
+
+There are of 3 Categorys in Design Patterns
+
+1)Creational Design Patterns -- Object creation
+2)Behavioral Design Patterns -- communication among objects ,
+								flexible
+3)Structural Design  Patterns -- put object together
+							Keep relationship between them
+			
+
+1)Creational Design 
+
+How objects are designed
+5 types
+a)Prototype
+b)Builder
+c)Singleton
+d)Factory
+e)Abstarct
+
+2)Behavioral Patterns
+Interaction and Responsibility of objects in such a way that 
+they can easily talk to each other and still loosely coupled.
+
+11 Patterns
+a)Chain of Responsibility
+b)Command Pattern
+c)Interpreter
+d)Iterator
+e)Memento
+
+3)Structural Patterns
+Ease of design by identifying a simple way to create
+relationshis between entities
+ 
+

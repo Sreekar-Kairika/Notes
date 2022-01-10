@@ -1,0 +1,66 @@
+Best Practise
+
+Quality of Code inversly proportional to
+Efforts taken by another Programmer
+
+Quality code is a code which is readable and maintainable
+
+1)Technical Debt:
+Technical debt is same Financial Debt 
+
+Using non-quality code leads to Technical debt
+Not reviewing code
+Bad variable and method names
+
+Lack of time 
+lack of process Knowledge
+Business schedule and pressure
+
+
+Solution::
+
+
+
+Cohesion :: High Cohesion
+Keeping the things together those are alike.
+Keep all tools in Toolbox
+
+Cohesive Code -- Keeping Similar tasks together.
+
+High Cohesion == Less Complexity + More Maintainability
+
+
+
+Coupling::Loose Coupling
+How dependent a piece of Code on other piece of code.
+
+Quality code is Loosely Coupled
+
+
+Primitive Obsession Code Smell
+
+When you use primitive data types to reprent domain ideas
+
+In Whatsapp :: chat , status , call are Domain Ideas
+
+Population fo citys::
+City -- string
+Population -- Integer
+
+
+Its bad
+Refactor Code -- 
+class City{
+	String name;
+	String size; // big small medium
+}
+class Population{
+	Integer Adults;
+	Integer Kids;
+}
+
+
+Comment for Why you written code not how!!
+
+
+

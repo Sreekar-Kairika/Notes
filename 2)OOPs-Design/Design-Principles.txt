@@ -1,0 +1,117 @@
+
+
+Design is Managable , Extendable ,Less-complex ,
+Easy to change
+
+If cost of changing is minimum , it is good design.
+Easy to test
+Less Complex
+ 
+Design Principles
+1)DRY -- Dont Repeat Yourself
+2)KISS -- Keep It Simple and Stupid
+3)YAGNI -- You Arent Gonna Need It
+4)SLAP -- Single Level of Abstraction Principles
+
+ 5 SOLID  Principles
+SRP - Single Responsibility Priciple
+OCP - Open Closed Priciple
+LSP - Liskov Substituion Principle
+ISP - Interface Segregation Principle
+DIP - Dependency Inversion Principle
+
+
+1)DRY
+Write common code in a block
+Donot write duplicate code
+We use abstarction to use code again
+
+
+2)YAGNI -- You Arent Gonna Need It
+Dont implement until you need it
+Dont write additional and irrelevant code 
+
+Delay in Carry
+Cost of implementation
+
+Programming Requirement.
+If it is relevant to problem we implement it.
+ 
+ 
+3)SLAP -- 
+Writing functions or methods
+Resuable
+
+Should not be lengthy.
+
+We should compare lengthy by No of lines of code
+We use different parameters
+Lengthy Problems - Hard to test , Hard to read , Reuse,
+Leads to dupliaction , Low Cohesion , Hifg Coupling
+
+
+Code in a block should be at same level of observation
+Easy to read , Reuse , test , One reason to change
+
+
+getDeatilsAndAmil{
+	
+	it has two different level of abstarction
+	1)Getting Details fromUser
+	2)Mailing to user
+	It voilates the principal
+	
+}
+
+
+Delegation  --  Read Again
+
+Manager gives the task to Lead , Lead to workers.
+
+Delegation is used to reduce Coupling
+
+We Book ticket abstract class
+TrainTicket and BusTicket implements it 
+
+We create a new thing BookByAgent and implement Ticketbooking
+
+
+LSP - Liskov Substitution Principle
+It prescribes substitutability of a class by its subclass.
+
+Inheritance is used for substitutability
+
+
+
+We have Bird CLass -- fly 
+
+Sparrow extend Bird -- Fly
+
+Ostrich extends Bird -- It cant fly
+It voilates Liskov Substituion Priciple
+
+Solution ::
+Create Bird Class -- getInfo()
+
+Flying Bird(fly()) ---->Bird Class
+Sparrow ---->Flying Bird
+
+
+Ostrich ---> Bird 
+// It has No flying feature
+
+
+
+Dependency Inversion Principle::
+
+Inverting the design where lower level modules defing interface
+that highe level modules depend on.
+So we get , higher level modules define Interface that lower
+level modules implement.
+
+
+High level modules should not depened on low-level modules,
+but should depend on abstraction
+
+Abstraction should not depend on details, 
+Details should depend on abstraction.

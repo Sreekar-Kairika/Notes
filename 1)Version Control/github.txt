@@ -1,0 +1,94 @@
+git status
+
+git init
+
+git add 
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/sreekar-k/To-Do-App.git
+
+git push -u origin master
+_________________________________________________
+
+git branch alpha
+    //Creates New Branch Alpha
+
+git branch -a
+   //Shows all branches available
+
+git checkout alpha
+    //  switched to Alpha
+
+git ls-files
+  //To check files
+
+git push --set-upstream origin alpha
+  // It  creates a branch in github and pushes data to it
+
+
+____________________________________________________________
+
+ls -a
+  // shows a hidden file
+
+touch name.txt
+  // Creating a file
+
+git status
+  // Checks tracked and untracked files
+
+git add . 
+    // Add all files to track them
+
+git commit -m "My first Commit"
+    //Commits the file
+
+git log
+  // History of all commands and changes ,Time Zone
+
+git add name.txt
+   //This file is added
+
+git commit -m "Added one file"
+
+vi name.txt
+  // Opening the File
+
+ls .git
+  // All files
+
+
+Master is a Branch , Main  -- The the Final Code all tested and in use
+
+
+First We FORK the repo , it is added to our Github Account
+
+
+Make sure we clone the forked one But not organisation
+
+git clone https://github.com/sreekar-k/Responsive-Ecommerce-Website
+ //It is cloned into our Local Machine
+
+git branch typo
+ // Creating a Bracnh 
+
+git checkout typo 
+  // Switching to typo branch
+
+We keep a Pull Request , If code is good and clean We Merge it with main
+
+
+git remote -v
+ // Shows all branches
+ // we have main and typo
+ 
+We Push typo to origin
+
+git push origin typo
+  //Push typo to origin branch
+
+We get a compare and pull request on GitHub
+We write what is Pull request ,what is Solved 
+
+Now the Owner and check Merge the Pull Request

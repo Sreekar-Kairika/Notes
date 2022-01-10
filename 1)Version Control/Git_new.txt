@@ -1,0 +1,237 @@
+
+
+2) Stagging
+changed 1 to 2
+git diff no change 
+
+
+git diff 
+// shows 
+
+after git add .
+
+git diff // no output
+git diff --staged // shows changes
+
+here we find the single file in two stages 
+  in stagged and one in normal
+  
+We use 
+git restore --staged file.txt
+// now the staged file is deleted
+
+git-restore is about restoring files in the 
+working tree from either the index or another commit.
+
+
+-----
+3) Git Branching
+
+
+
+
+---8)
+
+git rebase branch 
+//
+
+
+
+-----
+9)
+git revert // undo commited changes
+
+
+git checkout --file.txt
+//undo uncomitted changes  
+git checkout --.
+//undo all files
+
+-----
+
+10)Git reset 
+
+unstaged -- just locally on machine
+staged  -- added
+
+
+git reset - to remove elements from staging area
+
+
+git reset 
+// hard disk will reset to my previous version
+
+reset -- soft , mixed , hard 
+
+git  reset --soft HEAD~1
+// last commit is reseted
+
+
+
+git reset --hard HEAD 
+// Removes files from both staging Area anf remote
+
+git reset HEAD .
+//from staging area to working directory
+
+----
+git clean
+
+git clean -n
+//just warns
+//remove untracked files
+//gives warning only
+
+git clean -f
+// -f forced
+//Removes un tracked file
+
+
+git clean -dn
+//warn untracked directary
+git clean -df
+//remove directary
+
+
+----
+
+git commit --amend
+//amend the changes to previos commit only
+//new commit is added to previos commit only
+
+
+by doing amend again we can edit the commit message
+
+---
+
+re-ordering history
+
+We can change the history of commit files
+
+git rebase -i HEAD~8
+// 
+
+WORK AGAIN
+
+----
+
+SQUASH Co
+
+git rebase -i HEAD~5
+//opens commit
+we have 5 commits
+Remove all commit msgs , keep the last one and add msgs
+
+WE SQUASH the 5 commits , it is made as a single commit
+
+
+
+
+
+
+
+
+
+-----
+git Stashing
+
+
+
+// git rebasing
+
+--------
+
+git rebase
+
+
+It is process of combining a sequence of commits from 
+feature branch to Master branch.
+
+Will be in feature branch and rebase master
+git rebase master
+
+
+------
+
+Master , feature branch
+
+merge  --brings all commits in feature to master
+but to bring one or more specific changes we use cherry-pick
+
+git cherry-pick hash //makes commit
+git cherry-pick hash -n // does not make commit 
+//bring only changes
+
+
+Cherry-pick is used to pick specific commit from a feature branch
+and add it Master
+
+
+----
+
+git squash
+
+to clean commit history
+
+git rebase -i HEAD~3
+//operate on last 3 commits from head
+
+pick eece  commit3
+pict 21of  commit 2
+pick 123j  commit 1
+
+we now do
+
+pick eece  commit3
+squash 21of  commit 2
+squash 123j  commit 1
+
+We find a new single commit
+We change this commit msg  
+
+
+-----
+
+git revert 
+
+to undo the commited change we use revert
+
+git revert <hash>
+//this commit is undo
+
+--------
+
+Reset is used to undo changes in commit history
+files can be moved to Staging Area , Local Repo or can be deleted
+
+
+git reset --soft HEAD~1
+//top one file is moved from commit to staging area
+
+git reset --mixed HEAD~1
+// files are moved into local repo
+// not present in staging area 
+// previous files present in staging area are also 
+  moved to local repo
+
+
+git reset --hard HEAD~1
+//the 1st file is completely deleted 
+
+// 
+ ------
+ 
+ 
+ reording-history
+ 
+ git rebase -i HEAD~9
+ //opens interactive console
+ //change commits according to you
+ 
+ -------
+ 
+ bad commit -- bisect
+ 
+ 
+ ----------\
+ cherry-picking
