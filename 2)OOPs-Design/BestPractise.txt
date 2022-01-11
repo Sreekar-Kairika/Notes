@@ -1,6 +1,6 @@
 Best Practise
 
-Quality of Code inversly proportional to
+Quality of Code is inversly proportional to
 Efforts taken by another Programmer
 
 Quality code is a code which is readable and maintainable
@@ -18,8 +18,6 @@ Business schedule and pressure
 
 
 Solution::
-
-
 
 Cohesion :: High Cohesion
 Keeping the things together those are alike.

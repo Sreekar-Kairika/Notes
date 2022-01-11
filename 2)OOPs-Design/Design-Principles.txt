@@ -38,7 +38,10 @@ Programming Requirement.
 If it is relevant to problem we implement it.
  
  
-3)SLAP -- 
+4)KISS - Keep it Simple and Stupid 
+Keep it Short and Simple
+ 
+3)SLAP -- Single Level of Abstraction Principles
 Writing functions or methods
 Resuable
 

@@ -1,5 +1,5 @@
 UML - Unified Modeling Language
-It is a standard way to visualisa the software design
+It is a standard way to visualise the software design
 
 It is easy to communicate between Developers and Architects.
 
@@ -25,10 +25,12 @@ Association
 Teacher --> Subject   , Teacher HAS-A Subject
 
 Teacher <>--Deptartment , Aggregation
+There can be a teacher without any department
+They can exist Independently
 
 Deptartment ----<*>DeptManager , Composition
-
-
+They CANT exist independently
+--------------------------------
 Sequence Diagram ::
 Type of UMLDiagram
 How objects and classes interact with each other during 
@@ -48,9 +50,10 @@ Dashed lines move from LEFT to RIGHT.
 
 
 Activation Boxes -- How long Objects are active
+solidblocks show activation boxes
 
 
-
+HORIZONTAL::
 IF INSTRUCTION -- USE SOLID Line
 IF its Reply,Return,Respone -- Use Dashed Line
 

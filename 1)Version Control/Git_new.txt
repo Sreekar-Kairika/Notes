@@ -235,3 +235,14 @@ git reset --hard HEAD~1
  
  ----------\
  cherry-picking
+ 
+ A-B-C-D    master 
+   \
+    E-F-G-H feature
+
+git cheery-pick <commit-hash of F>
+A-B-C-D-F 
+  \
+   E-F-G-H
+   
+  

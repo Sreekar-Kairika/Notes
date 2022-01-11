@@ -156,16 +156,20 @@ Establish relationship between two diffeent classes through
 objects.
 
 1)Aggregation
-2)Association
+2)Composition
 
 Aggregation : If both entitys associated can exist independently.
 Code reuse is achieved by Aggregration 
+In Aggreagtion object will survive without another class
+object
 
 College has a Taecher
 //Teacher may have another college
 Office has a Employee
 
 Composition: Two entitys are highly dependent on each other
+Entitys are strongly associated with each other.
+In Composition Object cannot survive with contained object
 
 A House has a Kitchen
 A Car has a Engine

@@ -1,0 +1,197 @@
+configuration :
+
+git config --global user.name “nagavinay-zemoso”
+
+git config --global user.email “nagavinay.chinthada@zemosolabs.com”
+
+git config --global core.editor nano
+
+basic commands :
+
+git init
+
+git status
+
+touch demo.txt
+
+ls
+
+rm <file_name>
+
+nano demo.txt
+
+cat demo.txt
+
+echo some random text > demo.txt
+
+modifies file
+
+git log
+
+git add -A
+
+git diff
+
+displays the difference between the files present in local repo and staging area
+
+git diff --staged
+
+displays the difference made in the files in staging area after add and before commit
+
+git commit -m “message”
+
+git remote add origin <url>
+
+git push -u origin master
+
+git restore demo.txt
+
+git restore --staged demo.txt
+
+git branch
+
+displays all branches
+
+git branch newbranch
+
+creates a new branch of master branch
+
+git switch <branch_name>
+
+switches branches
+
+git diff <branch_1> <branch_2>
+
+displays diff b/w two branches
+
+git merge newbranch
+
+merge the branches
+
+git branch -d <branch_name>
+
+deletes branch
+
+git log --oneline --graph --all
+
+displays log
+
+git clone <url>
+
+git pull origin master
+
+git fetch is the command that tells your local git to retrieve the latest meta-data info from the original (yet doesn’t do any file transferring. It’s more like just checking to see if there are any changes available).
+
+git pull on the other hand does that AND brings (copy) those changes from the remote repository.
+
+Merging :
+
+Fast forward merge can be performed when there is a direct linear path from the source branch to the target branch.
+
+
+
+3-way merge
+
+
+
+Merge conflict occurs when two devolopers create branches and tries to modify and merge the same file.
+
+Rebase creates a linear track of commits.
+
+Revert is the command we use when we want to take a previous commit and add it as a new commit.
+
+it doesn’t remove previous history
+
+Reset is the command we use when we want to move the repository back to a previous commit, discarding any changes made after that commit.
+
+it removes history
+
+if a new file is created and added and then committed
+
+git reset --soft HEAD~x will just delete the commit and uncommit the new file but the new file will tracked in staging area.
+
+git reset --mixed HEAD~x will delete the commit and make the new file untracked.
+
+git reset HEAD~x will also do the same thing, it is default.
+
+git reset --hard HEAD~x will delete the commit and also delete the file.
+
+commit --amend is used to modify the most recent commit.
+
+Git stash saves the uncommitted changes locally, allowing you to make changes, switch branches, and perform other Git operations.
+
+Using the git stash command, developers can temporarily shelve changes made in the working directory. It allows them to quickly switch contexts when they are not quite ready to commit changes.
+
+git stash
+
+git stash list
+
+git stash apply
+
+git stash drop
+
+Clean
+
+it is used to delete untracked files
+
+git clean -n : shows what will be cleaned.
+
+git clean -n -d : shows what directories will be removed.
+
+git clean -f -d : remove untracked directories.
+
+Reordering History
+
+git reflog
+
+to get log with head ids
+
+git rebase -i Head~x (where x is a id)
+
+after using this command a gitbase-t-do opens, you can reorder the history by modifying the lines
+
+squashing is used to combine the commits as a single commit
+
+use git rebase -i Head~x
+
+then gitbase-t-d- opens , then replace pick with squash inorder to squash the commit
+
+advanced rebase interactive 
+
+git log --patch
+
+it will give log with diff
+
+git rebase --interactive v0.0
+
+it allows us to change the mesaages of each and every commit
+
+to change the message use reword instead of pick
+
+A gitignore file specifies intentionally untracked files that Git should ignore.
+
+if .gitignore file contains *.txt , then all the text files will be ignored 
+
+rm <file_name> will remove the file in local directory.
+
+if a file added to staging area, then if u use
+
+git rm --cached <file_name> 
+
+it will remove the file from staging area but not from local directory.
+
+git rm -f <file_name>
+
+it will remove the file from staging area and also from local directory
+
+Submodules
+
+Git submodules allow you to keep a git repository as a subdirectory of another git repository.
+
+git submodule add <git-repo-url>
+
+Tags
+
+Tags are convenient for keeping track of commits that bump a version number.
+
+git tag -a v1 -m “msg”

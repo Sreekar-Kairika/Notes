@@ -34,6 +34,21 @@ vi new_file.txt  // to open the file
 
 git pull to clone the repo
 
+git mv //
+
+git diff // only working directory 
+
+git diff --staged // compare files in staging area 
+
+git remote add origin /s/remote-project/1
+git push origin master //push to remote repo
+git pull origin master // pull from origin repo
+
+
+git log //shows commits made and time
+git show //view the changes made in commit
+ 
+
 --
 
 2 Restore and Checkout
@@ -112,4 +127,4 @@ Main branch
  
 
 
-add commit staging-area
+add commit staging-area  diff 
