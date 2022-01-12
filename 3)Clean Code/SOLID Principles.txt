@@ -1,0 +1,118 @@
+
+Design principles encourage us to create more maintainable,
+understandable, and flexible software.
+
+SOLID
+S single responsibility
+O open for extensions , not for modification 
+L Liskov substitution principle
+I Interface Segregation 
+D Dependency Inversion  
+
+__________________________
+
+S - Single Responsibility
+
+A class should have a single responsibility  and it should have 
+single reason to change.
+Benfits :: Testing ,Lower Coupling , Organization
+
+Seperate Behaviour so that can fix bugs easily
+
+__________________________
+
+O - Open for Extension , Closed for Modificattion
+
+We stop ourself from modifying existing code and causing
+potential bugs.
+
+We inherit the class to a child class and add extensions to it.
+
+This principle aims to extend a Class’s behaviour without 
+changing the existing behaviour of that Class.
+
+______________________________________________
+
+L - Liskov Substitution Principle
+
+A child Class cannot performs same Actions as Parent class
+and cause bugs.
+Most Complex
+If class A is a subtype of class B , we should be able to
+replace B with A without disrupting behaviour of our program.
+
+If S is a subtype of T, then objects of type T in a program 
+may be replaced with objects of type S without
+altering any of the desirable properties of that program.
+
+Let a Car Interface have two methods a)TurnonEngine
+ b)Accelerate
+ 
+ A)Motor car implememnts it -- No problem
+ B)Elecric car implements it -- It has no Engine -- Problem
+ 
+ It voilates Liskov Principle 
+ We work on the remodel , 
+ We take account of A)Engined Car B)Engineless Car
+
+__________________________
+
+
+I - Interface Segregation
+
+Larger interface should split into smaller ones.
+We make sure implementing classes only  need to be concerned about
+methods that are of interest to them.
+
+Clients should not be forced to depend on methods that 
+they do not use.
+Time cost waste and may produce bugs.
+
+Slits the Actions into smaller sets so that a Class 
+executes only set of actions it required.
+
+A client should never be forced to implement an interface
+that is doesnt use , they are also not forced to depend on
+methods they donot use.
+
+
+interface BearKeeper {
+	void washTheBear();
+	void feedTheBear();
+	void petTheBear();
+}
+//If we implement class , we need to do all things
+
+interface BearCleaner{
+	void washTheBear()
+}
+interface FeedCleaner{
+	void washTheBear()
+}
+interface PetCleaner{
+	void washTheBear()
+}
+
+class BearCarer implements BearCleaner,BearKeeper{
+	void washTheBear()
+	void feedTheBear()
+}
+
+__________________________
+
+D - Dependency Inversion
+
+Entitys should depend on Abstraction.
+
+Abstraction should not depend on details ,
+details should depend on abstractions.
+
+Principle of Dependency Inversiion refers to the decoupling of 
+software modules.
+Instead of Higher Level modules depending on ower Level
+modules ,both wil depend on Abstractions.
+
+Goal :This principle aims at reducing the dependency of a
+high-level  Class on the low-level Class by 
+introducing an interface.
+

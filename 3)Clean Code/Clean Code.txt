@@ -1,0 +1,40 @@
+
+Separate concepts vertically.
+Related code should appear vertically dense.
+Declare variables close to their usage.
+Dependent functions should be closed.
+Similar functions should be closed.
+Place functions in a downward direction.
+Keep lines short.
+Don’t use horizontal alignment.
+Use white space to associate related things and disassociate weakly related.
+Don’t break indentation
+
+
+
+
+1)Seperate Concepts Vertically
+Concepts similar to eachother should be maintained
+vertically.
+
+2)Related code should be vertically dense
+
+3)Declare variables close to usage
+
+4)Dependent functions should be grouped closed
+
+5)Similar functions should be closed.
+
+6)Place functions in downward direction 
+
+7)Keep Lines short
+
+8)Dont use Horizontal alignment
+var a     = 10
+var apple = 20
+use 
+a = 10
+var apple =100
+9)
+10)Dont break Indentation 
+Maintain Indentation for good visual

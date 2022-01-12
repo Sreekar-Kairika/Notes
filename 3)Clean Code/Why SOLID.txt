@@ -1,0 +1,27 @@
+
+Why Solid?
+
+Not following leads to::
+Strong coupling , 
+Strong coupling leads to more time for bug fixes
+Code not testable
+Duplication of code
+
+---------------
+
+Code Smells::
+
+Rigidity :Software is difficult to change 
+A small change causes a cascade of subsequence
+
+Fragility :: Software breaks in many places due to 
+single change
+
+Immobility :: You cannot reuse parts of code in other projects 
+because of high involed risks and efforts
+
+Needless Complexity
+
+Needless Repetition
+
+Opacity : Code is hard to understand.
