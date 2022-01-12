@@ -54,7 +54,9 @@ solidblocks show activation boxes
 
 
 HORIZONTAL::
-IF INSTRUCTION -- USE SOLID Line
+IF INSTRUCTION :: USE SOLID Line
 IF its Reply,Return,Respone -- Use Dashed Line
 
 Alternative Frame is used to use IF/ELSE Cases
+
+

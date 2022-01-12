@@ -35,5 +35,12 @@ e)Memento
 3)Structural Patterns
 Ease of design by identifying a simple way to create
 relationshis between entities
+a)Adapter
+b)Bridge
+c)Composite
+d)Decorator
+e)Facade
+
+
  
 
