@@ -1,0 +1,27 @@
+
+TDD -- Test Driven Devlopment
+
+We should first test and then write production code.
+
+
+1- You are not allowed to write any production code
+ unless it is to make a failing unit test pass.
+ 
+2- You are not allowed to write any more of a unit test
+ than is sufficient to fail, and compilation failures
+ are failures.
+ 
+3- You are not allowed to write any more production code
+ than is sufficient to pass the one failing unit test.
+ 
+ 
+ 
+FIRST
+F - Fast -- Test cases should be quick to execute
+I - Independent -- No dependency between them 
+R - Repetable -- Must be able to run in any environment
+S - Self Validating -- Test case can have two possible 
+	values . Either FAILED or PASS
+T - Timely -- Tests have to be created just before the code.
+     Writing code first then test cases is more complex.
+
