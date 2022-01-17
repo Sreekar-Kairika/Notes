@@ -35,6 +35,9 @@ var apple = 20
 use 
 a = 10
 var apple =100
-9)
+
+9) Use white space to associate related things and
+disassociate weakly related.
+
 10)Dont break Indentation 
 Maintain Indentation for good visual

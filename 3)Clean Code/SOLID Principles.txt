@@ -37,6 +37,10 @@ L - Liskov Substitution Principle
 
 A child Class cannot performs same Actions as Parent class
 and cause bugs.
+The child Class should be able to process the same requests and 
+deliver the same result as the parent Class or it could deliver 
+a result that is of the same type
+
 Most Complex
 If class A is a subtype of class B , we should be able to
 replace B with A without disrupting behaviour of our program.
@@ -68,7 +72,7 @@ Clients should not be forced to depend on methods that
 they do not use.
 Time cost waste and may produce bugs.
 
-Slits the Actions into smaller sets so that a Class 
+Split the Actions into smaller sets so that a Class 
 executes only set of actions it required.
 
 A client should never be forced to implement an interface
@@ -102,6 +106,8 @@ __________________________
 
 D - Dependency Inversion
 
+Reduce the Coupling between two entitys
+
 Entitys should depend on Abstraction.
 
 Abstraction should not depend on details ,
@@ -109,7 +115,7 @@ details should depend on abstractions.
 
 Principle of Dependency Inversiion refers to the decoupling of 
 software modules.
-Instead of Higher Level modules depending on ower Level
+Instead of Higher Level modules depending on lower Level
 modules ,both wil depend on Abstractions.
 
 Goal :This principle aims at reducing the dependency of a
