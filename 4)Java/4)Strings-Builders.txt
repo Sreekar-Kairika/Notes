@@ -1,0 +1,18 @@
+
+Strings are Array of characters
+
+a - 97 -- U+0061 -Unicode AND 97 is Ascii code
+
+equals  return BOOL 
+
+a.equals(b) -- True/False
+
+a.compareTo(b) __  -1/0/1
+
+
+ystem.out.println(name.toLowerCase());
+        System.out.println(name.toUpperCase());
+
+        System.out.println(("Index of a is " + name.indexOf("a")));
+
+        System.out.println("Substring "+name.substring(3,5))

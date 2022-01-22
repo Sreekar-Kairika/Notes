@@ -1,0 +1,12 @@
+
+Arrays are Homogeneous data structures.
+They store data of similar data type
+
+Array size is fixed , cannot be elongated
+so we use Arraylist
+
+Arraylist only hold Reference types
+
+
+
+Arraylist is Generics.

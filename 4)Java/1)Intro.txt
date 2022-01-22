@@ -1,0 +1,115 @@
+
+IDE - Integrated Devlopment Environment
+IntelliJ
+
+Compiler -- Coverts source code into byte code , 
+ which JVM understands.
+
+When Java is compiled it turns to ByteCode.
+
+Main is entry point of a program
+
+
+---------------------------------
+Variables , Constants and Datatypes
+
+Identifier is the varibale name
+We use --camelCase--
+
+data type -- int , String
+
+Variable declaration
+Variable initalization
+
+int holds data
+
+But string holds only Address
+
+int a=10
+Stirng s ="apple"
+s+a 
+
+//When ever string is there , String will win 
+it leads to concatenation if string is present
+
+
+Primitive and Reference Datatypes 
+
+8 Primiitves in Java 
+byte short int long
+float double
+char 
+boolean
+---
+Reference 
+
+Real Numbers are default Double in java
+float v= 3.14 //wrong
+float v=(float)3.14
+
+double a = 3.14;
+        //float b =3.14;
+        float b = 3.14f;
+        //narrowing / lossy conversion
+
+        double c = b;
+        //widening loseless conversion
+		
+Comments
+// single line comment
+
+/*
+	multiple line comments
+*/
+--------------------
+Arithmetic Operators
+
+Binary Operators 
++,-,*,/,%
+Uninary Operator 
+a++
+b--
+
+--------------------
+
+Relational Operators 
+
+> , >= 
+
+< , <=
+
+== , !=
+
+
+Primitive Data types Compare Values for == operator
+but for String or Non Primitive they compare address
+
+name1 = "Rahul"
+name2 ="pavean"
+bool compar = name1.equals(name2)
+
+--------------------------
+
+Logical Operators
+
+&& - and 
+|| - or 
+!
+
+
+----------
+
+Bitwise Operators
+
+&
+|
+^ - or 
+
+------
+
+Taking Input
+
+Scanner  keyboard = new Scanner(System.in);
+String name = keyboard.nextLine();
+System.out.println(name);
+

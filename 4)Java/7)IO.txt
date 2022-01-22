@@ -1,0 +1,18 @@
+
+File Input -- reading data from files
+        Data goes from file into memory.
+		
+File Output-- writing data into files
+
+try{}
+
+catch(File){}
+catch(File){}
+
+We can have multiple exception blocks
+
+
+
+------------------
+
+FileOutput
