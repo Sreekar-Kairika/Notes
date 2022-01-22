@@ -1,4 +1,3 @@
-
 Why Solid?
 
 Not following leads to::
@@ -11,17 +10,24 @@ Duplication of code
 
 Code Smells::
 
-Rigidity :Software is difficult to change 
-A small change causes a cascade of subsequence
+Rigidity :Software is difficult to change. 
+A small change causes a cascade of subsequence.
 
 Fragility :: Software breaks in many places due to 
-single change
+single change.
 
 Immobility :: You cannot reuse parts of code in other projects 
-because of high involed risks and efforts
+because of high involed risks and efforts.
 
 Needless Complexity
 
 Needless Repetition
 
 Opacity : Code is hard to understand.
+
+
+
+
+
+
+ 
