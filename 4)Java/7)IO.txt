@@ -4,7 +4,9 @@ File Input -- reading data from files
 		
 File Output-- writing data into files
 
-try{}
+try{
+            infile.close();
+}
 
 catch(File){}
 catch(File){}
@@ -16,3 +18,4 @@ We can have multiple exception blocks
 ------------------
 
 FileOutput
+
