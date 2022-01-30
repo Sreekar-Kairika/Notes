@@ -1,0 +1,257 @@
+
+Streams
+Compuataion on Data
+
+Cretaion -- 
+Stream<Movie> movieStream = Stream.empty()
+
+Stream<Movie> movieStreamnames = Stream.of("titanic")
+//stream with elemnts
+
+
+
+Stream<Double> randomgenerator = Stream.generate(Math::random)
+
+Stream.iterate(1,i->i+1)
+//with Lambda
+
+
+ITERATIONS::
+
+for(Movie m : movies){
+if(m.isClassic()){
+ top2Clasic.add(m)
+ }}
+	
+movie.stream().filter(Movie::isClassic)
+.map(Movie::getName)
+.forEach(print)
+
+
+Lazy and Eager Operations::
+Execute straight away is called Eager 
+
+filter is lazy method it cant produce output just creates 
+another stream
+
+
+Lazy Methods -- map,filter
+Eager       -- executes th pipe line and produce method
+Eager Methods -- count
+
+Count is a TERMINAL operator it invokes pipe line
+and produc eoutput
+
+
+Streams Can be created from Collections
+
+
+Collections -- are Data Structure used for data storing
+
+Streams require a DATA source, they form a pipeline
+
+
+
+PRIMITIVE STREAMS :: 
+
+reduce(Integer::sum)
+
+int stream :: 
+ints[] = {1,4,5,},,
+IntStream instream = IntStream.of(ints)
+
+
+---
+Filtering ::
+if and control statements
+
+Filter takes a predicate function True/False
+Can use multiple filters
+
+---
+Collection ::
+
+trades.stream().collect(toList)
+//create a list from data
+
+trades.stream().collect(toSet)
+//create a Set from data
+
+trades.stream().collect(toMap)
+//create a Map from data
+
+
+
+
+---
+Mapping ::
+
+empoyee
+.stream()
+.map(Employee::getName)
+.distinct()
+//removes duplicates
+
+
+empoyee
+.stream()
+.map(Employee::getName)
+.distinct()
+.limit(2)
+//gets only two outputs
+
+
+empoyee
+.stream()
+.skip(4)
+.map(Employee::getName)
+// first 4 elemets are sikpped
+
+
+-----
+Short Circut Operations 
+//Mathcing and Finding
+Pipeline is ceased if mathced
+
+
+//Find First
+findFirstTrade = trades.stream()
+.filter(Trade::isBigTrade)
+.findFirst()
+
+findFirstTrade.get()
+// to ge result
+
+findAny()
+//anyTrade is result 
+//parallel run 
+
+
+anyMatch(t -> t.getStatus().equals("Rotten")
+//check if rotten
+//predicate 
+
+
+
+allMatch(t -> t.getStatus().equals("IBM")
+//gives all matched
+
+tardes.stream.noneMathc(Trade::isCancelledTrade)
+
+-------
+Reducing
+// Aggreate to single result 
+
+Take Single Argument
+
+
+trades.stream()
+.map(Trade::getInstrument)
+.reduce((a,b) -> a+" "+b))
+
+
+//Sum of all Trades 
+trades.stream()
+.map(Trade::getInstrument)
+.reduce((a,b) -> a+b))
+
+// intial value is 10 and add i j 10
+int.reduce(10 ,(i,j) -> i+j)
+
+
+------
+Optional Type
+
+attendes.stream().reduce(Integer::sum)
+
+We use a optional method as there is a chance to get NULL 
+
+so we use GET method to receive Data from Optional methods
+
+
+---
+Optional
+
+Optional.off(student)
+
+
+
+---------------
+
+Advanced Streams
+
+Grouping::
+
+employee.stream()
+.collect(Collectors.groupBy(e -> e.getDepartment))
+
+Groupby also takes two paramters , t does grouping by two.
+
+-----
+
+Partioning ---
+Partion data using a predicate 
+
+employee.stream()
+.collect(Collectors.partitioningBy(Employee :: isExecutive))
+
+// true / false is output
+
+
+---------
+
+Collectors -- Are reduction operators , they group data and gives
+single output 
+ 
+ They help us to Accumulate the Data 
+
+
+-------
+
+FlatMap ---
+
+for(Movie movie : movies){
+	for(Actor actor: movie.getActors()){
+		
+	}
+}
+// get Actors in the movie 
+ 
+
+movies.stream().flapMap(m -> m.getActors().stream())
+
+------------
+
+Range and Stats
+
+Min,Max,Average
+
+
+ints = IntStream.range(1,100)
+1 to 99 
+
+IntStream.rangeClosed(10,20)
+max = ints.max()
+
+min = ints.min()
+
+avg = ints.average()
+
+------------------
+
+Serial Execution
+
+fork is used in Java 7 , for parallel 
+we use fork and join
+
+Parallel Execution
+
+trades.stream()
+.parallel()
+
+// it is made through parallel 
+
+Collection API as parallel directly
+
+
+

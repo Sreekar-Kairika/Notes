@@ -1,0 +1,22 @@
+Lambda& 
+
+Lambdas are free floating code blocks represneting behaviour 
+that can be passed to other blocks.
+
+Adaptability to functional programming in java
+
+Interface should have only one method only to
+use as a lamda expression
+
+Lamba Expression:
+
+// input -> body
+
+Lamba Scoping
+It has scope as same enclosing method
+
+
+Method Reference using Lamdas
+Method reference are short hand for Lambda Expressions
+
+Construtor Reference is Haspmap example

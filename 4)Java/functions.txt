@@ -1,0 +1,70 @@
+
+
+Predicate Function : evaluate a condition and give True/False
+
+
+Compsotie Functions :: Logical Operators 
+AND OR EQUALS 
+
+Predicate<Trade> bigTrade  = t -> t.isBigPredicate()
+
+
+Predicate<Trade> bigTrade  = t -> t.isBigPredicate() && t.isCancelled()
+
+
+Consumer Functions ::
+Accept Input and return Nothig
+It has a single generic  method that accepts anything 
+and return null.
+May be to delte
+
+
+
+Supplier Function::
+It supplys us with result and data
+It doesnt take any input argument and gives output
+Using get methods
+Fetch newly created Trades 
+
+Supply fuits
+
+Opposite of Consumer Function 
+
+
+Function function:: We give a object and expect a object as 
+output 
+Take t as input and return r
+
+Composite Methods::
+
+Given employe find his manager and then manager assistant
+we use composite function 
+
+
+testAndThen
+managerFinder.andThen(assistantFinder)
+//output of first becomes input to second
+
+
+assistantFinder.compose(managerFinder)
+
+
+All above work on Reference  but if we provide int 
+
+IntPredicate --- if we want to use primitives 
+
+
+
+BiPredicate -- 
+if given Manager and employee check the employs works for 
+Manager or not
+
+BiPredicate<Emp,Man> = 
+
+BiConsumer -- Two input Paramter
+T t , R r --->takes r but do nothing
+
+
+BiFunction -- 3 types T U V 
+T U are input , R as output 
+Emp Manager Assitant of Manager 

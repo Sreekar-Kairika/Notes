@@ -1,0 +1,23 @@
+
+
+A lambda is a functional Interface
+
+A functional interface must have a single abstract methods
+
+
+Functional Interface Annotation
+
+
+Concrete implementation can be used in Interface 
+We can use static and Default methods
+
+
+Now Interface have concrete methods , so there is ambigiuty
+in multiple inheritance using  
+
+Rule to Issue Multiple Inheritance using Interface
+
+
+Now in Interface we define Concrete methods , now
+do we require Abstract classes
+If resuing then Abstarction is best
