@@ -1,0 +1,39 @@
+ 
+ 1)Assignment -1 - done
+
+ 2)String check all alphabets -- done
+ 
+ 3)Ping url - done 
+ 
+ 4) KYC Date - done
+ 
+ 5)Find errors in code - done
+ 
+ 6)except vampire question
+ 
+ 7)a)
+   b)
+   c)not done 
+   d)
+   e)Inner not know -- issues 
+ 
+ 8)Exception handling - done 
+ 
+ 9)Regex Operation - done 
+  start with Capital and end with period[fullstop]
+ 
+ 10)Linkedlist -  done 
+ no issue , update insertion at begining and middle
+ 
+ 11)Assignment 11 - 
+  Cant take cmd line file input
+ 
+ 12)\
+ 
+ 
+ 
+ 
+ https://github.com/saketh-macharla/java/blob/master/solid%20principles/src/com/correctFormat/Manager.java
+ 
+ 
+ https://github.com/ganeshdende/solidprinciples/blob/master/src/com/solidprinciples/Main.java

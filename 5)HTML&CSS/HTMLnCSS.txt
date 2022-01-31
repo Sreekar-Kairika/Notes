@@ -1,0 +1,291 @@
+
+Forms
+<label for="username"> Username</label>
+<input type="text" name="username" id="username">
+
+label.for == input.id 
+//they are used for referencing 
+
+<section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type ="number" name="amount" step="1"
+          id="amount" >
+	        <!--Add your code below-->
+</section>
+
+//step -1 , change number by +1/-1
+
+
+<img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg"/>
+        <figcaption>A cute dog.</figcaption>
+      </figure>  
+       <!-- Create <audio> tag here -->
+ <audio controls>
+  <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3"  >
+</audio>
+
+
+
+
+
+Selector in CSS
+
+.className{
+}
+
+#idName{
+}
+
+//color hover 
+a:hover{
+  color: darkorange;
+}
+
+css power
+
+id>class>general[h2,p]
+
+
+Chaning in CSS
+
+h1.specail
+// elements containg a both h1 abd class called special
+
+
+
+Descendant Combinator:: Nested Elements
+
+Elements in class special and have other condition
+
+.description h5 {
+  color: blueviolet;
+}
+//h5 elements inside class description 
+
+
+h4,li{
+	//multiple selectors
+}
+
+
+----------------------
+
+Visual Rules
+
+font-family : Georgia
+font-size : 18px;
+ font-weight: bold;
+ 
+ 
+ text-align : left
+ right center justify
+ 
+ color:white
+ //color of text 
+ background-color: white 
+ 
+ 
+ Opacity-- Transparent or not 
+ 
+ 
+ background-image:url(---)
+
+
+imporatant
+
+color: blue !important
+//cannot override it
+
+
+
+Box Model
+
+Content -- width height
+
+border - 2px slod black
+
+padding :: arae between content and border 
+
+margin :: area between Border and Final Boxx
+
+border-radius : 5px;
+///makes like curve
+
+
+padding: 10px;
+// all sides 10px 
+
+padding-top:
+padding-right:
+padding-bottom:
+padding-left:
+
+padding : top right bottom left;
+
+padding : 5 10 20
+//top 5 bottom 20
+//left right -20 
+
+padding: 10 20
+// top bottom 10
+//left right 20
+
+Margin::
+margin:10px;
+margin-top:
+margin-right:
+
+same as Padding
+
+Margin also allows us to Center the Content
+
+
+margin:0 auto;
+//top bottom 0
+//left right '' auto 
+
+
+min-height:
+max-height:
+
+max-width:
+min-width:
+
+
+When Overflow Occurs in Box Model We have following options
+1)Hidden
+2)Scroll
+3)Visible
+
+
+overflow:scroll
+
+
+Visibility :: 
+hidden
+visible
+collapse
+
+box-sizing: border-box 
+
+
+
+------------------------
+
+Display and Positioning
+
+position: static , relative , absolute, fixed , sticky
+
+position:static
+//No change default 
+
+
+position:relative
+  top: 50px;
+  left: 120px;
+//here image is moved 50px down and 120px right 
+with respect to static 
+
+position:absolute 
+//When an element’s position is set 
+to absolute, all other elements on the page 
+will ignore the element and act like it 
+is not present on the page
+
+
+
+position:fixed
+//element is fixed 
+We can fix the title
+
+position:sticky
+//sticks to the position 
+
+
+Z- index
+
+Display::
+
+display::inline,block,inline block
+
+Inline :: em,display ,a 
+
+
+// Image Display 
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+
+
+---
+Float\
+The float property is commonly used for wrapping text
+ around an image
+The float property can also be used to float multiple 
+elements at once
+float :: left ,
+right
+
+CLEAR::
+
+clear:: left ,right ,both , none
+
+
+
+
+COLOR::
+1)Hexadecimal
+2)rgb color rgb(23,45,23)
+3)hsl hue-saturation-lightness
+(120,30%,20%)
+degree , saturation , lightness 
+
+4)hsla
+a - opacity
+
+------------
+
+Typography
+
+ font-family:'Georgia'
+ 
+ font-weight: bold,normal , lighter , bolder 
+ 
+ font-style:italic
+
+  text-transform: uppercase;
+
+
+
+Text-Layout
+
+letter-spacing : 2px;
+word-spacing : 0.3em;
+line-height:1.4;
+text-align : right; left , justify
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
