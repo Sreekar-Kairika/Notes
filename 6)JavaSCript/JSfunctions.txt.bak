@@ -1,0 +1,12 @@
+Call Apply Bind Closures
+
+Functions:: 
+
+
+function myFunction(a, b) {
+  return a * b;
+}
+
+Function Hoisting::
+Hoisting is JavaScript's default behavior of moving declarations to the 
+top of the current scope.
