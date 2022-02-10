@@ -1,0 +1,19 @@
+ JSON 
+ JavaScript Object Noatation
+ 
+ //Convert this objcet into a string to be stored in Local Storage
+ 
+ JSON.stringfy() 
+ //converts it into string and can be stored in Local Storage 
+ // Json format is converted to string and stored 
+ 
+ JSON.parse() ---> It converst to JavaScript Objcet
+ //Coverts string to Objcets and can apply object functions to it  
+ // Data is converetd to JSON format
+ 
+ Same as XML 
+ 
+ Easy to write or read
+ 
+ 
+ JSON is key value pairs

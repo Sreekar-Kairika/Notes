@@ -82,3 +82,4 @@ const myMother = new Person("Sally", "Rally", 48, "green");
 The JavaScript prototype property allows you to add new properties to object constructors:
 
 Person.prototype.nationality = "English";
+

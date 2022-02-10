@@ -1,0 +1,67 @@
+
+
+BRAD TRAVERSY COURSE
+
+JavaScript is high level Interpredted Language
+JS is Client Side Programming
+
+We use '
+1)Script Tag in HTML file
+2)Include external JS file 
+
+<script scr="app.js"> </script>
+
+Alert - shows window popup 
+ 
+
+Console: We can execute JS from Console 
+
+// comments
+
+/* comments
+
+*/
+
+console.log("Hello");
+console.log(123);
+console.log(true);
+greting = "welcome";
+console.log(greting);
+console.log([1,2,3,4]);
+console.log({a:1,b:23});
+
+-------------------
+
+Variables 
+
+var let const
+
+CamelCase names are used - firstNamw
+PascalCase                - FirstName
+
+
+
+Let --- 
+
+
+const name="sreekar";
+//cant be reassigned
+
+name = "Kairika"
+//not possible
+
+const greeting;
+// error declartion missing 
+
+Cant change for Primitive Datatypes 
+but if const is assigned to a Objcet data can be changed 
+
+-------------------
+
+Data Types in JavaScript
+
+We have
+1)Primitive Datatypes - stores in stack
+2)Reference Data - Reference 
+
+1)Primitive - String Number Boolean Null Undefined Symbol 

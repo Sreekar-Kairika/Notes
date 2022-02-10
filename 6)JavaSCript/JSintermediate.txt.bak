@@ -106,9 +106,51 @@ class Car {
 
 //Objcets to class Car 
 
+let myCar1 = new Car("Ford", 2014);
+let myCar2 = new Car("Audi", 2019);
+
+
 --------------------- 
 MODULES 
 
-let myCar1 = new Car("Ford", 2014);
-let myCar2 = new Car("Audi", 2019);
+JavaScript modules allow you to break up your code into separate files.
+This makes it easier to maintain the code-base.
+JavaScript modules rely on the import and export statements.
+
+EX:
+const name = "Jesse";
+const age = 40;
+export {name, age};
+
+import { name, age } from "./person.js";
+
+----------------------------------
+JSON 
+
+JSON stands for JavaScript Objcet Notation
+JSON is a format for storing and transporting data.
+
+
+SYNTAX
+Data is in name/value pairs
+Data is separated by commas
+Curly braces hold objects
+Square brackets hold arrays
+
+
+"firstName":"John", "lastName":"Doe"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
