@@ -4,3 +4,15 @@
  Session valid for a session , if we close browser they are erased
  
  Every website has its own Local Storage.
+ 
+
+ 
+ Sessional Storage ::
+It is stored inside the browser
+
+
+Cookie - 4kb
+Session storage - 5mb
+LocalStorage - 10mb
+
+Cookies storage location Both Browser and Server

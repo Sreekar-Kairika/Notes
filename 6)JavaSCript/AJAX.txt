@@ -1,0 +1,17 @@
+
+ AJAX Asynchronous JavaScriot and XML 
+ 
+ It helps in fetching data asynchronously without interfering 
+ 
+ No page reload/refresh 
+ 
+ Modern website use JSON instead or XML for data transfer.
+ 
+ WHY AJAX?
+ No page refresh
+ saves network bandwidth
+ very  interactive 
+ Better User experience 
+ 
+ 
+ Ajax uses XMLHttpRequest or XHR object
