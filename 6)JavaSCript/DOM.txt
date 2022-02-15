@@ -8,6 +8,7 @@
  document.getElementById("demo").innerHTML = "Hello World!";
  
  ------------
+ // comment
  
  Finding HTML Elements
  
