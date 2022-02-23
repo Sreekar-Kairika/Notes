@@ -1,0 +1,58 @@
+ 
+ To make element Draggabale , you add draggable="true" to element 
+ 
+ When you drag an element, these events fire in the following sequence:
+	dragstart
+	drag
+	dragend
+	
+	
+When you hold a mouse button and begin to move the mouse, the dragstart event fires on the draggable element that you’re dragging. The cursor changes to a no-drop symbol (a circle with a line through it) to indicate that you cannot drop the element on itself.
+
+After the dragstart event fires, the drag event fires repeatedly as long as you drag the element.
+
+And The dragend event fires when you stop dragging the element.
+
+The target of all events (e.target) is the element that is being dragged.
+
+DROP 
+  When you drag an element to valid drop 
+		dragenter
+		dragover
+		dragleave or drop 
+		
+The dragenter event fires as soon as you drag the element over a drop target.
+
+After the dragenter event fires, the dragover event fires repeatedly as long as you’re 
+dragging the element within the boundary of the drop target.
+
+When you drag the element outside of the boundary of the drop target, the dragover event stops firing and the dragleave event fires.
+
+In case you drop the element on the target, the drop event fires instead of the dragleave event.
+
+The target (e.target) of the dragenter, dragover, dragleave, and drop events are 
+the drop target elements.
+
+
+To turn an element into a valid drop target, you can override the default 
+behavior of both dragenter and dragover events by calling the event.
+preventDefault() method in their corresponding event handlers. 
+
+
+
+
+DATA TRANSFER 
+
+The dataTransfer object is a property of the event. It allows you to transfer 
+data from the dragged element to the drop target.
+
+The dataTransfer object has two methods: setData() and getData().
+
+dataTransfer.setData(format, data)
+
+he getData() method retrieves the drag data stored by the setData() method.
+
+The getData() accepts one argument:
+
+dataTransfer(format)
+

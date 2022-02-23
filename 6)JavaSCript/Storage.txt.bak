@@ -16,3 +16,5 @@ Session storage - 5mb
 LocalStorage - 10mb
 
 Cookies storage location Both Browser and Server
+
+documnet.cookie = "name=Sreekar"

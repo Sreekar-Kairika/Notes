@@ -1,13 +1,12 @@
+Local Storage  : Key value pairs we stor in them
  
- Local Storage  : Key value pairs we stor in them
+Session valid for a session , if we close browser they are erased
  
- Session valid for a session , if we close browser they are erased
- 
- Every website has its own Local Storage.
+Every website has its own Local Storage.
  
 
  
- Sessional Storage ::
+Sessional Storage ::
 It is stored inside the browser
 
 
@@ -18,3 +17,8 @@ LocalStorage - 10mb
 Cookies storage location Both Browser and Server
 
 documnet.cookie = "name=Sreekar"
+
+
+
+
+
