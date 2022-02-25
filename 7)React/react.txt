@@ -1,0 +1,57 @@
+
+React Shanker Sai
+
+
+   Concepts Covered,
+
+TypeScript:
+
+Modules
+
+Types and Interfaces
+
+Functions and Classes
+
+Generics
+
+Unions and Intersections
+
+ES-6 updates.
+
+React:
+
+React Basics - Why React?
+
+Virtual DOM
+
+Atomic Design
+
+React Best Practices
+
+Linter and Formatter
+
+Story Book Concepts
+
+Material UI and integration with React
+
+Theme File.
+
+Class and Functional components
+
+Hooks - useState , useEffect , useNavigation
+
+Conditional Rendering
+
+Managing the component Tree
+
+React Router
+
+Applied the Learned concepts to Blinkist APP
+
+Few Projects implemented while learning:
+
+Simple Shopping Cart Implemented using React+TypeScript : GitHub - grshankersai/ShoppingCartReactTypeScript 
+
+TypeScript Practice : GitHub - grshankersai/TypeScript_Concepts 
+
+StoryBook Practice : GitHub - grshankersai/StoryBook_Example 
