@@ -1,5 +1,55 @@
    
-   
-interface , type 
+TypeScript : Superset of Javascript
+Has All features of Javascript
+
+Having Static Types in Typescript
+ 
+ Static Examples : Java C C++
+ 
+Dynamic : Javascript Python We dont declare datatypes at writing code
+Data Types  are not named Explicitily
+ 
+PROS:: More Robust , Easily Spot Bugs , Readability
+ 
+CONS ::  More Code to write , Required Compilation , Not true Static typing
+ 
+  Extension : .ts or .tsx 
+ TSC Type Script Compiler compile .ts file 
  
  
+ -----------------
+ 
+ Install npm 
+ sudo apt install npm 
+ 
+ //Global Installation
+
+  sudo npm i -g typescript
+  
+  tsc -v 
+  //4.5.5 version
+  
+  tsc index //compilation
+  A JS file is created as Same Name 
+  
+  
+  tsc --init
+  //creates a Config file 
+  
+  tsc 
+  //compiles typescript and generate the Java Script file
+  // makes changes of tsc into js
+  
+  to Compile
+  
+  tsc
+  tsc --watch
+  
+  node index.js
+  //run Javascript file
+  
+  
+  
+ TYPE SCRIPT in REACT 
+ 
+ npx create-react-app . --template typescript 
