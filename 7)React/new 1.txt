@@ -1,0 +1,9 @@
+
+1)Mounting
+2)updating
+
+3
+
+
+
+componentDidMount -- called once when component is showed on screen

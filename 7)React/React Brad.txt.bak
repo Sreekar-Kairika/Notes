@@ -1,0 +1,98 @@
+ 
+ React is JS Library
+ 
+ React runs on the client as a SPA Single Page App
+ 
+ React is not a Framework its a Library
+ Anjular & Vue is Framework 
+ 
+ Why REACT??
+ View Layer - MVS react is V 
+ Reusable Components 
+ JSX 
+ Uses Virtual DOM  -- No reloading takes to updat epage
+ Performance & Testing 
+ 
+ We have Class & Functional Components 
+ 
+Components return JSX 
+Componensts can also take in props  
+
+Components are Dynmaic it has States 
+
+State Management
+Context APi or Redux
+
+React HOOKs are functions that let us hook into React State  &
+life cycle features
+
+useState -- returns a stateful value and a function 
+useEffect -- Perform side effects in function components
+useContext , useReducer  
+
+-----------------
+npx create-react-app brad-taskapp
+
+npm start
+//start dev server
+
+pubilc folder/ has index.html file , its single html page
+
+src/index.js --- entry point of React 
+src/App.js  -- Root  component 
+
+
+
+Functional Components with Hooks 
+
+
+JSX - Java SCript Extension
+
+A JSX function returns  a single parent Element
+
+-----------------------
+
+Class Component 
+
+class Header extends React.Component{
+      render(){
+         return <h1>Class Component </h1>
+     }
+ }
+ 
+ 
+ Functional Component 
+ 
+ const Header = () => {
+  return (
+    <header>
+      <h1>Functonal Component</h1>
+    </header>
+  )
+}
+
+Props is used to pass data 
+
+We have Default types
+
+(props)
+({name,age}) --> passing props or data 
+
+If we pass boolean or number keep them in braces 
+
+function App() {
+  return (
+  
+  <div className="App">
+    <Header name='Sreekar' age={20} />
+    </div>
+  );
+}
+
+
+We can use Style components directly or can use
+
+-----
+Taks Component 
+
+We use useState for Tasks 

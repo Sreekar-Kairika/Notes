@@ -56,3 +56,124 @@ CONS ::  More Code to write , Required Compilation , Not true Static typing
  //sets react app with Typescript
  
  //npm start
+ 
+ -----------------------
+ 
+ Static Checking
+ 
+ Non - Exception files:
+ const user = {
+  name: "Daniel",
+  age: 26,
+};
+user.location; // error in TS
+
+
+Install npm 
+npm install -g typescript
+
+Basic DataTypes:
+number string boolean any
+
+let id:number = 10
+
+let x: any = "Hello"
+
+let ids:number[]=[1,2,3]
+
+let arr:any[]=[1,2,"apple",true]
+
+
+Tuple
+let person:[number,string,boolean] = [1,"Sreekar",false]
+
+
+Union
+let wid:string|number 
+wid = "s"
+wid = 1
+
+
+Creating Objects using Interface
+
+type User = {
+    id:number,
+    name:string
+}
+const person1:User = {
+    id:123,
+    name:"Rahul",
+}
+
+
+Type Assertion 
+let cid:any =1
+let customerId = <number>cid
+customerId = 100
+
+
+Functions
+function addNum(x:number,y:number) :number{
+    return x+y
+}
+console.log(addNum(11,33))
+
+
+Interfaces
+
+interface Emp {
+    id: number
+   readonly name: string //readonl;y cannot be edited 
+    age?:number
+    //age becomes optional
+}
+//cannot change the name 
+const emp1 : Emp = {
+    id:124,
+    name:"Prabhas",
+  }
+  
+ 
+Type 
+Type can be used for Primitives & Objects
+type  Point = number | string
+const p1 : Point = 1
+
+Interface Cannot use Primitives or Unions
+
+
+
+Interface with Functions
+
+interface MathFunc{
+    (x:number,y:number):number
+}
+
+const add:MathFunc = (x:number,y:number):number =>x + y
+const sub:MathFunc = (x:number,y:number):number =>x - y
+
+
+Classes
+class Person{
+    name:string
+    age:number
+
+    constructor(name:string,age:number){
+        this.name = name
+        this.age=age
+    }
+
+    register(){
+        return `${this.name} is now registered`
+    }
+}
+const p4 = new Person("sreekar",20)
+console.log(p4.register())
+
+
+Generics
+function getArray1<T>(items:T[]):T[]{
+    return new Array().concat(items)
+}
+let numArray1 = getArray1<number>([1,2,3,4])
+let strArray2 = getArray1<string>(["a","b","c"])

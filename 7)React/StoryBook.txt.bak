@@ -1,0 +1,32 @@
+ 
+ 
+ npx sb init 
+ // creating storkbook in a react application 
+ 
+ npm run storybook
+ // to run the storybook 
+ 
+ 
+ We write usinf Args  in stories 
+ 
+ 
+ 
+ 
+const Template = (args) => <Button {...args} /> 
+
+export const  PrimaryA = Template.bind({})
+PrimaryA.args = {
+    variant:"primary",
+    children :'Primary Args'
+}
+
+
+Decorators ::
+Decorators are componnets that wrap a story 
+
+We use Decorator in storybook/preview to make it global
+But its not good
+
+So we use Theming 
+
+Addons 

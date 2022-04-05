@@ -1,0 +1,61 @@
+Bowser Router everyint is wrapped in it
+Route wrapped in Router 
+
+element takes JSX elemets to navigate 
+
+Outlet - where to display the children , open pipe there 
+
+NavLink gives us isActive Property 
+
+Acceess paramters 
+
+
+To carry information we have two methods Navigate & Links also
+
+ 
+ npm install react-router-dom
+ // v6  is installed
+ 
+ 
+ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
+
+
+ <Router>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+    </Routes>
+  </Router>
+  
+  
+  
+        <Route path="/myapps" element={< Navigate to = "/learn" />} />
+
+
+      <Route path="/myapps" element={< Navigate replace to = "/learn" />} />
+
+
+<a> tags reload entire page 
+so we use Linlk
+
+
+Outlet -- tells where inside the component it should appear
+
+
+useParams -- to take & display data from router 
+
+courseid params : 1 2 3 4
+
+
+Navlinks is same as Links
+NavLinks has some extra functionalitys 
+
+
+
+To carry information futher into componenst we use Redux/State Management
+
+
+We use here useNavigate && useLoaction 
+ 
+navigate() is used to  send the infomation
+
+location is used to collect information 

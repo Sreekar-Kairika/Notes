@@ -1,0 +1,227 @@
+
+src/index.html -- It decalres root id
+
+src/index.js -- ReactDOM.render(<App/> document.getElementById('root'))
+src/App.js -- Contains App Component 
+
+--------------------
+
+JSX - JavaScript Extension 
+We have our own Script Tags
+
+
+--------------------
+
+Rendering Elements 
+
+We render Elements , root Element is displayed by Index.js
+
+In App.js we create Keep our Components to Display it
+
+------------------
+
+Components
+ 
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation
+
+
+Class Component
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+
+Functional Component
+const FunComponent = () => {
+  return (
+    <div>
+      <h2>Hello from Functional Component </h2>
+    </div>
+  )
+}
+  
+  
+PROPS -- They are used to pass the data
+
+
+Props are Read Only 
+
+---------------------
+LIFE CYCLE METHODS IN CLASS COMPONENT 
+
+1)Mounting -- Show React COmponent first Time
+
+2)Updating -- 
+b)If prop changes ,  Component should re render
+a)If component has state variable , it renders 
+
+3)UnMounting -- We dont want to show a component
+
+4)Error Handling 
+
+
+Prop vs State
+
+props get passed to component
+state is managed within component
+
+Function parameters
+variables declared in the function body 
+
+
+props are immutable -- Parent owns child cannot change 
+state can be changed 
+
+props - Functional Component
+this.props state component
+
+useState Hook -- Functional Component
+this.state -- Class Component
+
+Within Body to change state of a componet we use set state method
+
+--------------------
+
+Event Handling
+
+When User Interacts with Application Events are fired
+
+Mouse Click , Mouse Over ,Keyboard press
+
+Events are named using Camelcase
+
+We pass a JSX as event Handler
+
+
+---------------
+
+setState 
+Never modify stae directly use setState
+When we modify state react will not re render it ,
+setState render it
+
+Calls to setState are Asynchronous so we use a clallback method
+
+setState( {object } , callback function) 
+firts para is Object & 2nd para is Callback Function 
+
+
+
+We have a to update a stae based on a previous state  we need to 
+pass a Function as an argument to setState insted of object
+
+
+----------------------------------
+
+Video 12
+
+Destructing Props & state 
+
+Make array assigned to a Variables
+
+(props)
+( {name,age})
+
+Destrucing props to two different variables
+
+const {name,age } =props 
+name & age are assigned values from props 
+
+class Component 
+const {name,age } = this.props
+-------------------
+
+Video - 14
+Binding in Event Handler 
+
+This keyword in Event Handler so we use Bind keyword for Event Handlers
+
+Approch 1  - bind in render method
+        <button onClick= {this.cickHandler.bind(this) } > Click </button>
+
+Approach 2 - using arrow functions 
+        <button onClick= {() => this.cickHandler() } > Click </button>
+
+
+Approch3  - Binding Event in Constructor
+
+
+Approch4 - Use Arrow Function in class 
+---------------------
+
+video -15 
+
+Parent passed to child called props 
+
+CHild  to parent also we use Props 
+
+
+A child component should call a Parent Component  Method 
+
+We pass method as Prop to Child component 
+
+---------------------
+
+video -16 
+
+Conditional Rendering 
+
+1)If else
+2) Element variable
+3)Ternary Operator
+4)Short Circuit Operator 
+
+If-else doesnt work in JSX as it not valid
+We write it outside JSX
+
+-----------------------
+
+video - 17 ,18
+
+Map 
+
+Keys -- Key prop not accessible in Child 
+
+Key  is a specila string attribute you need to include when creating a list 
+of elements 
+Keys give the element a stable identitiy
+
+Keys help React Identify which items have changed , are added or removed
+Efficieent update of User Interface 
+----------------------------
+
+Video - 21
+Form Handling 
+
+We use Controlled Components in React 
+
+
+-----------------------------
+
+Components in LifeCycle 
+
+They are for Class Component not for Functional Components 
+
+
+1)Mounting --  When an instance of a component is being created and inserted in the DOM
+
+2)Updating -- When component is re render 
+b)If prop changes ,  Component should re render
+a)If component has state variable , it renders 
+
+3)UnMounting -- When component is removed from the DOM 
+
+4)Error Handling  -- Error during rendering 
+
+
+Mounting methods -- constructor , render m componentDidMount ,
+									static getDerivedStateFromProps
+									
+Updating -  render , componentDidUpdate , 
+
+UnMounting -- componentWillUnmount
+
+Error handling -- static getDerivedFromError , componentDidCatch 
+

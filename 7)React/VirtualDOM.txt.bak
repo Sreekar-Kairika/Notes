@@ -1,0 +1,28 @@
+React creates a Copy of DOM 
+ 
+React matches Actual DOM to Virtual DOM
+ 
+If Virtual DOM gets updated , then Actual DOM is alos changed
+ 
+Querys Actual DOM is expensive but updating is  easy
+so we change Virtual DOm and its updated on Actual DOM
+ 
+Actual DOM is expensive and time taking
+ 
+ Virtual DOM is copy of DOm but light weight copy
+ 
+But Virtual DOM cant decide what on Screen to Appear
+ 
+Manipulating Virtual DOM is faster 
+ 
+ If a Update/Change a single DOM all DOMS get updated its a problem
+ 
+But Virtual DOM updates faster
+ 
+Then Actual DOM compares itself  with Virtual DOM  and 
+then update the Specific Object to real DOM.
+
+
+React at any state contains two Virtual DOMS
+  1)Updated V DOM
+  2) Previous V DOM

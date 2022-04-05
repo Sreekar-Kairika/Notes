@@ -1,0 +1,40 @@
+ Atoms
+ Molecules
+ Organsism
+ Templates
+ 
+ Pages 
+ 
+ Atoms are smallest building blocks
+ They cant be further divided
+ Build Less & Quicker 
+ 
+ Molecule :: Combination of bunch of atoms 
+ Display the information
+ 
+  Atoms & Molecules are DUMB components
+ 
+
+ Organisms:
+ Functional entity they contain a Business Logic 
+  Behaviour of interface
+  
+  
+  Templates::
+  Entitys drawing Layout
+  Header footer content
+  
+  Pages :: Content in the form of page 
+  
+  
+  
+ ADVANTAGES::
+ More Reusable Component 
+ Easy to accomidate new changes 
+ Logic segregation from UI element
+ Consistent UI 
+ 
+ 
+ 
+ Container Presentation Component 
+ 

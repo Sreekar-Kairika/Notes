@@ -1,0 +1,28 @@
+ 1)useState
+ 
+ 2)useReducer
+ Its an alterbative to useState
+ But it has one benefit
+ 
+ 3)useEffect :: will be called every time if state is changed
+ 
+ useEffect(  , [])
+ //mention in brackets for which useEffect should not be called 
+ 
+ 
+ 4)useRef ::  Manipulate & change DOM 
+ 
+ Focus on the Input 
+ 
+ Its important in DOM manipulation \
+ 
+ 
+ 4)UseLayoutEffect :: same as useEffect 
+ called before use UseEffect 
+ 
+ 
+ UseLayout is called before 
+ UseEffect is called when everything is loaded in page
+ 
+ 
+ 

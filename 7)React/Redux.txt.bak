@@ -1,0 +1,120 @@
+  
+ Redux is a predictbale state container for Javascript  Apps
+ Can be used with React Angular Vue & Even Js
+ 
+ Redux is a Library
+ Redux is a State Container - stores state of a component 
+ 
+ Redux is predictable -- state transactions are predictable
+ 
+ 
+ Components in React have own state , but we use Redux to manage the state 
+  
+ 
+ In Normal React to pass data we need  to uplift & pass as props , and every state does
+ not require it.
+ 
+ So we use Redux to maintain state outside component 
+ 
+ 
+ React Context - Prevets Props Drilling 
+ useContext + useReducer -- works same as Redux 
+ 
+ 
+ React - UI Library
+ Redux - State Management Library
+ 
+ React-Redux -- Binding Library 
+ 
+ ----
+ 
+ npm init 
+  npm install redux
+  
+  
+ ------
+  
+  
+  3 Principles
+  
+   Shop -- Stores all cakes on a Shelf
+   Shopkeeper - At the front of store
+   Customer - At store Enterence 
+  
+  
+  Shop                      --  Store  -- Holds state of Application
+  Intention to Buys  --  Action -- Describes what happended
+  Shopkeeper -- Reducer   -- Ties the store & actions together 
+												
+A 	Reducer  which actually carries out the state transition depending upon
+the action 
+
+A STORE holds the state of your Application
+
+A Action that describes the changes in the state of the Application
+
+A Reducer which Actually carries out the state transition depending on the action 
+
+
+
+3 Principles
+
+1)The state of your application is stored in an object tree within a single store.
+
+Maintain our application state in a single object whih would be managed by 
+Redux Store 
+
+Noof Cakes = n
+
+2)The only way to change  the state is to emit an action an object describing what 
+happended.
+
+To update the state of your app , you need to let Redux know about that with 
+an action 
+
+Not allowed to directly update the state object 
+
+let shopkeeper know about our action --BUY_Cake 
+
+State is Read Only 
+
+
+3) To specify how the state tree is transformed by actions , you write pure reducers
+
+Reducer - (prevState,action) --> newState 
+
+Reducer is ShopKeeper s
+
+
+Subscripbed , dispatch 
+
+Store is Subscribed to App
+
+App dispatches the Action 
+
+
+------
+
+Actions :: Action is an object with Type property 
+
+Action Creator is a function that returns an Action.
+
+
+Only way  Application can interact with store
+Carry Info from App to Redux Store 
+Plain JS object
+Type proeprty for action 
+
+-------------
+
+Reducer ::
+How App state changes in response to action change
+
+Reducer - (prevState,action) --> newState 
+
+
+------------
+
+Redux Store::
+
+One Store 
