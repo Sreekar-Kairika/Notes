@@ -1,0 +1,67 @@
+   
+ Ordinate the test 
+ Manual Testing is also used , 
+ 
+ Writing test for each feature is easy
+ 
+ Automated
+ 1)Catch bugs
+ 2)Increases uses Confidence in Application
+ 3)Speeds up QA [Quality Assurance] time
+ 4)Test Serve as Documentation 
+ 
+ Types Of Testing 
+ 1)Unit  -- Single unit in Isolation is Tested 
+ 2)Integration -- Test Interaction between components 
+ 3)E2E testing[End to End]
+ 
+ 
+
+npm run test 
+ 
+npm install  
+
+
+RULES::
+We need a Test Block , which is common to all 
+1)We render that Component we want to test
+2)Find the elements to interact 
+3)Interact with those elements
+4)Assert that the results are as expected 
+
+
+----
+Video -5 
+Query Tutorial
+
+const linkElemnt = screen.getByText(/learn react/i)
+
+.findAllBy -- Array of elements 
+.findBy -- One Element
+
+.getAllBy
+.getBy -- if finds multiple throws error 
+
+.queryAllBy
+.queryBy
+
+
+90% -- getBy is  used 
+
+findBy  --  we can use Async/Await 
+
+queryBy - if not exist retun null
+but find & get throw error 
+
+------
+
+attributes  --
+
+Accesible to EveryOne --  getByText, getByRole, getByPlaceholderText , getByLabeltext
+getByRole - button , heading 
+seen by users
+
+Semantic Querys - getByAltText , getByTitle
+Read by screen 
+
+Test ID - getByTestid  

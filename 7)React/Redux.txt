@@ -1,4 +1,15 @@
   
+ Redux is a open sourcce Javascript Library
+ Provides Centralized store 
+  
+  Makes omplex application easier , as number of components increase
+  it will be difficult to manage state with in component 
+  
+  Flexible 
+  
+  Easily Debuggable 
+  
+  ----------------
  Redux is a predictbale state container for Javascript  Apps
  Can be used with React Angular Vue & Even Js
  
@@ -125,4 +136,165 @@ Allows Acess to state via   -- getState()
 Allows state to be updated via -- dispatch(action)
 
 Register listeners via subscribe(listener)
+
+-------------------------
+
+Cakes & Ice creams 
+
+Cakes stored in shelf & managed by Shopkeeper
+
+Ice creams stored in Freezer & New Shopkeeper manages it 
+
+
+Easily extensible & Managable 
+
+----------------
+
+Multiple Reducers 
+
+
+We create 2 reducers , but our redux store knows only about one reducer 
+
+-----------------------
+Combine Reducers 
+
+combine an reducer
+
+When we dispatch an action both reducers reveive the action 
+
+Each reducers manages its Global State 
+
+-------------------
+
+Middleware 
+
+Suggested way to extend Redux with custom Funcitobality 
+
+Redux Logger Library is used 
+npm i redux-logger 
+
+Import Middelware & pass it as an argument to store 
+
+
+--------------------
+
+Async Actions 
+
+SynchronousActions:: As soon as dispatched , the state was immediately updated
+If you dispatch the BUY_CAKE Action , the numOfCakes was right away dcremented by 1
+
+Aysnc:: Fetches a  list of users from an API end point & stores it in 
+redux
+
+STATE   ACTIONS 
+state = {
+	loading : true
+	data : []
+	error:  '  '
+}
+
+loading : Display a loading spinner in your component 
+data : List of users
+error : Display error to the user 
+
+ACTION:
+FETCH_USER_REQUEST ::  Fetch list of users 
+FETCH_USER_SUCCESS:: Fetched successfully
+FETCH_USER_FAILURE::  Error fetching Data
+
+REDuceRS :
+
+case : FETCH_USER_REQUEST
+		loading:true
+case : FETCH_USERS_SUCCESS
+		loading:false
+		users:data(from API)
+case FETCH_USER_FAILURE:
+		loading:false
+		error : error(from API)
+		
+	---------------------
+	
+	Video- 13
+Async Action Creators
+Working with API call 
+
+axios , 
+redux-thunk - standard way of async action creator
+
+middleware 
+
+By ThunkMiddleware we return a function from Action Creator 
+
+Thunk helps us to return a Action instead of Action by a Action creator 
+
+------------------
+
+Cake Shop Application 
+
+Application is always subscribed to redux store 
+App cannot update state in store directly it DISPATCHES an action 
+Reducer Handles the action  & update current state 
+
+npm i redux react-reduxs
+
+
+Reducer Takes two parameters -- STATE , ACTION 
+STORE takes REDUCER as parameter v
+
+
+----------------------
+
+
+18 -Connect
+
+mapStateToProps :: It takes redux STATE as an parameter & returns an Object 
+
+
+
+connect is used to connect compoent to redux store 
+
+
+---------------------
+
+Redux+Hooks 
+
+Instead of connect we use Hooks API funtions.
+
+--------------
+
+useSelector Hooks:
+
+MapStateToProps - use selector Hooks
+To access No of cakes in redux store
+
+useSelectors() -- It takes function as parameter , it is called Selector Functions
+It receives REDUX state as a Parameter 
+
+
+-----
+
+useDispatch()
+returns a reference to dispatc function
+
+
+---------------
+
+Logger Middle ware 
+
+loger helps us to view logs 
+
+---------------
+
+Redux Dev Tools Extension 
+
+
+
+
+
+
+
+
+
+
 

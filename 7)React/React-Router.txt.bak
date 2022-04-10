@@ -7,6 +7,10 @@ Outlet - where to display the children , open pipe there
 
 NavLink gives us isActive Property 
 
+Acceess paramters 
+
+
+To carry information we have two methods Navigate & Links also
 
  
  npm install react-router-dom

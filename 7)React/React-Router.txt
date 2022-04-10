@@ -9,16 +9,12 @@ NavLink gives us isActive Property
 
 Acceess paramters 
 
-
 To carry information we have two methods Navigate & Links also
 
- 
  npm install react-router-dom
  // v6  is installed
  
- 
  import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
-
 
  <Router>
     <Routes>
@@ -28,10 +24,10 @@ To carry information we have two methods Navigate & Links also
   
   
   
-        <Route path="/myapps" element={< Navigate to = "/learn" />} />
+ <Route path="/myapps" element={< Navigate to = "/learn" />} />
 
 
-      <Route path="/myapps" element={< Navigate replace to = "/learn" />} />
+ <Route path="/myapps" element={< Navigate replace to = "/learn" />} />
 
 
 <a> tags reload entire page 
