@@ -1,0 +1,52 @@
+ WEEK - 1
+ 
+INTRO to Databases 
+
+Unconventials Facts :: Images Maps Fingerprints
+
+Convential Facts :: 
+
+
+Characteristics:
+1)Persistency :: data should be present always if system shutdowns
+2)Inter-Related :: should know Customer relation ship 
+3)Shared :: 
+
+
+ERD - Entity Relationship Diagram 
+
+
+FUNCTIONAL or INFORMATIONAL  ROLES 
+
+Functional Users  :: Indirect , Parametric , Power
+Information Tech :: Data specialist , Developer , Management 
+ 
+ Indirect - passive rule
+ 
+ powe user -- active , decision making
+ 
+ 
+ Developer - collect requorement 
+ 
+ 
+ Database Admisntrator -- both functional & IT , More Technical Role 
+ 
+ Data Admisntrator -- Management role , control usage of data , Manager
+                                     More Planning Role 
+ 
+ 
+ 
+ DBMS Over View 
+ 
+ DBMS is a collection of componnets that support the creation , use & 
+ maintenance of databases
+ Storage
+ Data Acquistion
+ Maintenace
+ Retrieval 
+ 
+ 
+ Embedded Database have high value 
+ 
+ 
+ SQL - Structured Query Language 

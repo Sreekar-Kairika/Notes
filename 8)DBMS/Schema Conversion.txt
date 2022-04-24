@@ -1,0 +1,19 @@
+ 
+ Logical Database Design 
+ 
+ Managing Redundancy 
+ Eliminationg Redundancy
+ 
+ 
+ ERD VS RelationModel Relation 
+ 
+ Rules::
+ 
+ 1)Entity Type Rule :: Convert secah entity to table
+ 2)1-M Relationship Rule :: FKs in child table
+ 3)M_N :; Associate FKs , combined PK
+ 4) Identifying Relationship Rule :: Component of PKs
+ 
+ 
+ Conversion Problems
+ 

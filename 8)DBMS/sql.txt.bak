@@ -1,0 +1,44 @@
+  SQL - Structured Query Language
+ A computer language contating statements for database defination,
+ control & manipulation   
+ 
+ 
+ SELECT statement 
+ 
+ Select * from Students
+ 
+ 
+ JOIN Operator 
+ 
+ SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+
+
+Group By Clause
+
+Select FacNo,FacRank FROM Faculty
+ORDER BY FacRank
+
+Row Conditions -- WHERE clause
+Column Condition -- GROUP BY 
+
+QUERY ORDER 
+
+Rows from Where  , Group By  having ,   Results Order by 
+
+
+Query Formulation
+
+
+Problems involving Join & Group By 
+
+
+Modifiaction Statements :: INSERT UPDATE DELETE 
+
+Query Formualtion Error
+
+1)Syntax 
+2)Semantic 
+3)Redundancy 

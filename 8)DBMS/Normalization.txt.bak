@@ -1,0 +1,26 @@
+  
+ 
+ Avoid Redudancy 
+ 
+ Modification Anamolys :: unwanted side effect when we try to 
+ 1)Insert namoly
+ 2)Update 
+ 3)Delete 
+ 
+ Functional Dependency::
+ 
+ Contraints on the possible rows of table
+ Value neutral like FKs & PKs
+ 
+ 
+ X --> Y
+ 
+ X determines Y
+ 
+ 
+ 
+ Normal Forms::
+ 1NF 2NF 3NF BCNF 
+ 
+ Practical Concerns
+ 

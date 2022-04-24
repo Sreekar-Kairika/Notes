@@ -1,4 +1,26 @@
+  npm install --save-dev @testing-library/react
+npm install --save-dev jest
+npm i ts-node
+
+
+
+
+in package.json
+1)test : jest  
+2)Add Babel files 
+
+copy files:
+1)sonar-project.properties
+2)babel.config.json
+3)jest.config.json
+
+.github/workflows 
+-- add build yml file   
+
+Adding sonar Token to the Git Repo 
    
+   
+ -------------------------------  
  Ordinate the test 
  Manual Testing is also used , 
  
@@ -65,3 +87,181 @@ Semantic Querys - getByAltText , getByTitle
 Read by screen 
 
 Test ID - getByTestid  
+
+
+-------------
+
+7-- Query Method 
+
+import Header from './Header'
+import {render,screen} from '@testing-library/react'
+
+test('test the header component ',async ()=>{
+    render(<Header  title="My Header" /> )
+    const headingElement = screen.getByText('/myheader/i')
+    expect(headingElement).toBeInTheDocument();
+})
+
+
+getByRole('heading')
+
+
+------------------------
+
+8- Assertions 
+
+If we using Routing , we create a function & wrap it in BrowserRouter 
+    
+
+expect(pElement).toBeInTheDocument();
+
+toBeVisible() --- is visible to user or not 
+
+.not.toBeVisible() --- .not method can be used to check the negative of all 
+
+toContainHTML('p') -- does it contain tag 
+
+toBeInTheDocument();
+toBeInvalid()
+toBeNull()
+toBeeNan()
+
+tobeFalsy()
+
+
+const paraElement = screen.getByTestId('para')
+expect(paraElement.value).toBe("1")
+
+
+---------------
+
+Describe Block 
+
+we have a describe block & test blocks in it. 
+
+we have a describe block
+
+describe('      ' , ( )=>{
+		
+		// All test Blocks s
+		
+	}   )
+	
+	
+--------------
+
+10 -- Fire Events 
+
+Here we see how we interact the Elements 
+
+// We we type text in a given field 
+fireEvents.change( ' ' , {} )
+
+// When we enter Add , the input field shoul become empty 
+
+
+--------------------
+
+11 - Integration Test
+
+When we Add test , it should be displayed on the List Component 
+
+
+We add Elemnt to todo and check if it is present on the screen 
+
+describe("Todo",()=>{
+    it('shoul render same text passed into title prop', async()=>{
+
+        render(<MockTodo/>)
+        const inputElement = screen.getByPlaceholderText(/Add a new task here.../i)
+        const buttonElement = screen.getByRole('button',{name:/Add/i})
+        fireEvent.change(inputElement,{target:{value:'Go grocery'}})
+        fireEvent.click(buttonElement)
+
+        const divElement = screen.getByText(/GO grocery/i)
+        expect(divElement).toBeInTheDocument()
+
+    })
+})
+
+
+// Writing Generic for All
+const addTasks = (tasks) =>{
+    
+    const inputElement = screen.getByPlaceholderText(/Add a new task here.../i)
+    const buttonElement = screen.getByRole('button',{name:/Add/i})
+
+    tasks.forEach(tasks => {
+        fireEvent.change(inputElement,{target:{value:task}})
+        fireEvent.click(buttonElement)
+    });
+}
+
+
+-- Check Intial style && change it to dashed over it 
+
+ expect(dicElement).not.toHaveClass('todo-item-active')
+ 
+ -----------
+ data-testid --
+ 
+ 12 -- Finding Async Elements 
+ We get the data from Axios 
+ Await can be used with FINDBYTESTID only 
+ 
+ 
+ describe("FollowersList", () => {
+
+    it('should render follower list' , async ()=>{
+
+        render(<MockFollowersList/>)
+        const followerDivElement = await screen.findByTestId('followe-item-0')
+        expect(followerDivElement).toBeInTheDocument();
+    })
+})
+
+----------
+
+13)Mocking Request 
+
+Working with external APIS is a problem , we test the API and
+it is not preferable 
+
+So we mock a Data , which we use in our app 
+
+-- React reset mocks everytime 
+
+nodemodules/react-scripts/utility/ rest-mock -- false 
+
+data:{
+
+	
+	}
+
+export default {
+	get : jest.fn().mockResolved()
+}
+
+---------
+
+14 -- Before & After Each 
+
+describe(()=> {
+
+	beforeEach(()=> {
+	console.log('Running before each test')
+	})
+	
+	beforeAll(()=> {
+	console.log('Running before Once All tests ')
+	})
+	
+	afterEach(()=> {
+	console.log('Running after  each test')
+	})
+	
+	afterAll(()=> {
+	console.log('Running after all test')
+	})
+	
+} )

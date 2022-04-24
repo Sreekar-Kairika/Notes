@@ -1,0 +1,64 @@
+ 
+Entity Relationship Diagrams
+
+ 
+ ERD has 3 main items
+1)Entity Type[name: Student] -- collection of physical items 
+2)Attributes[name,age] -- Keys
+3)Relationships 
+ 
+Cardinality ::
+
+Underline is indicated as Primary Key
+
+Course has Offering
+
+Cardinality::
+
+course1    off1
+course2    off2
+                  off3 
+
+0<- -- zero cardinality
+|-|  maximum cardinality 				  
+
+
+Cardinality is the number of unique items in a column
+If a class has 60 members , they have 60 different roll numbers 
+
+
+Degree :: It is the number of entitys involved in the relationship.
+Cardinality :: Relationship b/w two or more tables
+a)1-1
+b)1-M
+c)M-1
+d)M-M
+
+Degree of a relation is the number of attribute of its relation schema and 
+Cardinality of a relation is the number of tuples
+
+Degree is the number of attributes or columns present in a table.
+Cardinality is the number of tuples or rows present in a table.
+
+
+Crows fit symbol :: O<-  , 
+ | - perpendicular line -Cardinality One
+ 
+ 0- minimum
+ <-  -- maximum 
+ 
+ minimum is indicated Inside the line & maximum is indicated outside the Line
+ 
+ ERD uses Relation ship in Diagram 
+ 
+ 
+Existence Dependecy & Identification Dependency 
+
+
+WeakEntity Type : They dont have a primary Key 
+
+DiagonalLine in corner Indicates Weak Entity Types  
+
+
+
+Self Referencing Relationship :: Have only one Entity 

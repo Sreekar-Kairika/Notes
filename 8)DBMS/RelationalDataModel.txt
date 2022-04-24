@@ -1,0 +1,56 @@
+ 
+ Relational Database
+ 
+ They are used to communicate ideas easily
+ 
+ Collection of Tables
+ 
+ Table Name & Column Name 
+ 
+ Use Matching Values to Join the Tables 
+ 
+ Joins are used for Merging Table 
+ 
+ 
+ INTEGRITY RULES 
+ 
+ 
+ Null Value :: Absence of a value 
+ Primary Key -- Column or  combination of columns with unique values
+ 
+ Foreign Key : Its Primary key in another Table
+         
+		 
+ENTITY INTEGRITY ::
+Primary key for each table
+No misiing[null] values for primary  
+
+Referential INTEGRITY
+
+
+
+CREATE STATEMENT 
+
+
+CREATE TABLE  sreekar-table (name CHAR(20) , age integer,email VARCHAR(20))
+
+Data type specification  -- CHAR , VARCHAR [20], INTEGER , FLOAT(P)
+P- precison
+DECIMAL(w,r)
+
+
+CONSTARINTS in TABLES 
+1)Primary Key
+2)Foreign Key
+3)Unique
+4)Required -- Not Null 
+5)Check
+
+Constraints may be Inline or External
+
+NOT NULL are placed as inline 
+
+constraint name  PRIMARY KEY (firstname, lastname) -- external
+as we us ecombine them 
+
+constraint age check( age >18)
