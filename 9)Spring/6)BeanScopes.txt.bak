@@ -1,0 +1,31 @@
+ 
+ Bean Scopes
+ 
+ 
+ 
+ 1)SINGLETON:: Spring Container creates only one instance of bean by default
+ 
+ It is cached in memory
+ 
+ All requests for the bean , will return a SHARED reference to the SAME bean 
+  It is good for a state-less bean 
+  
+  
+ 2)PROTOTYPE:: Creates a new bean instance for each container request  
+ 
+ NEw Object for each request 
+ 
+ 3)REQUEST  -- web apps only 
+ 4)SESSION -- web apps only 
+ 5)Global Session -- web apps only 
+ 
+ 
+ BEAN LIFE CYCLE METHODS 
+ 
+ Container Started -- Bean Instantiated--Dependency Injected-- Internal Spring Procesing--Your custom init method
+ 
+ Bean is Ready for use , Container is shutdown  --- Yor custom destroy -- stop 
+ 
+ WE CAN ADD CUSTOM code during BEAN INITIALIZATION
+ --Calling custom business logic method
+ --Setting up handles to resources [db , sockets , file etc]

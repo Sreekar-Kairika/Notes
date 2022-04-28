@@ -1,0 +1,35 @@
+ 
+ Outsourcing the cosntruction and managemnt of objects 
+ 
+ IOC -- To achieve loose coupling 
+ 
+ These are the design patterns that are used to remove dependency from 
+ the programming code
+ 
+ 
+ We are coding through the interfacce w ecan handle many coaches 
+ 
+ 
+ Inversion of Control
+ 
+ We should create a Object Factory 
+ 
+ Spring Container
+ 1)Primary Function
+ Create & Manage Objects[Inversion of control]
+ Inject Objects Dependencies[Dependency Injection]
+ 
+ 
+ Configuting Spring Container
+ 1)XML configuration file
+ 2)Java Annotations
+ 3)Java Source Code[modern]
+ 
+ Spring Devlopment Process
+ 1)Configure Spring Bean -- we use XML 
+ 2)Create a Spring Container -- also called Application Container 
+ 3)Retrieve Beans from Spring Container
+ 
+ 1)Spring Configuration
+     <beans id="myCoach" class="com.TrackCoach" >
+ 

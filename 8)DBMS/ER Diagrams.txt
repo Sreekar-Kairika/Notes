@@ -1,4 +1,4 @@
- 
+  
 Entity Relationship Diagrams
 
  
@@ -62,3 +62,7 @@ DiagonalLine in corner Indicates Weak Entity Types
 
 
 Self Referencing Relationship :: Have only one Entity 
+
+
+
+ 

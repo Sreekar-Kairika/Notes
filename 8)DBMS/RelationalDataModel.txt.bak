@@ -52,3 +52,5 @@ NOT NULL are placed as inline
 
 constraint name  PRIMARY KEY (firstname, lastname) -- external
 as we us ecombine them 
+
+constraint age check( age >18)

@@ -1,0 +1,62 @@
+ 
+ 
+ Maven is a chiefly used for Jav Projects
+ 
+ It helps in building the code downloading dependecny
+ 
+ Helps us to get Specifi JAR file 
+ 
+ 
+ Maven is a Open Source build tool
+ 
+ It  is written in Java 
+ 
+ It is usedto build Scala , Ruby , C# as well 
+ 
+ 
+ MAven is a Project Object Model(POM) 
+ Process
+ 1)Builds
+ 2)Dependency
+ 3)Reports
+ 4)Distribution
+ 5)Releases
+ 6)Mailing List 
+ 
+ 
+ 
+ Maven Repository
+ It contains all dependent  JAR files
+ 
+ CONCEPTS ::
+ 
+Project Object Model POM refers to the XML files that have all the info
+regarding project & configuration
+
+Dependency Refers to the Java Libraries 
+Repository refer to JAR files 
+
+Build profiles refer to the set of configuration values , that are required
+to build a project using different configurations
+
+Different build profiles are added to the POM files when enabling different builds 
+
+Plugins are used to gain specific plugins 
+
+Maven Architecture
+
+1)Read pom.xml file
+2)Fom file has a)Dependency b)Plugins c)Lifecycle Phase & goals d)Build profiles 
+
+
+
+MAven Lifecycle is Collection of steps that are to be allowed to build a project
+3 built-in build life cycles
+a)Default :: Handles project Deployment
+b)Clean :: handles project cleaning
+c)Site :: handles the creation of project sites documentation 
+
+Compile -- test compile -- test --package -- Integration test -- Verify -- Install -- Deploy 
+
+Advantages of Maven
+1) Helps in managing all the processes , such as building , docs ,releasing 

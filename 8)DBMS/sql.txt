@@ -42,3 +42,4 @@ Query Formualtion Error
 1)Syntax 
 2)Semantic 
 3)Redundancy 
+  

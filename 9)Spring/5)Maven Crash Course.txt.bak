@@ -1,0 +1,115 @@
+ 
+ Maven gives a Standard Diectary file 
+ New Devlopers joining a Project becomes easily to understand 
+ 
+ src
+   - main
+        -- java source webapp
+  - test
+       -- java resource 
+  - target
+  - pom.xml 
+
+
+src/main/webapp -- Web App is used 
+
+  
+  ADVANTAGES::
+  1)Dependency Management
+     -- Maven will find JAR files for you
+	 -- No more msiing JAR files 
+	 
+	 
+ 1)Creating resource file not mentioned in Video
+ 
+ 2)properties file placing 
+ 
+ 3)Literal Injection from property file 
+    sol:: adding some headers in beans
+	
+	
+4)Maven Installation 
+
+
+pom.xml file ::
+pom stands for Project Object File
+--It is shopping list for Maven 
+
+POm file has -- Project Meta data , Dependencies , Plugins 
+
+1)Project Meta data  -- project name , version , output file type : jar war
+2)Dependencies  -- List of projects we depend on Spring Hibernate
+3)Plugins -- Additonal custom tasks to run
+                 generate JUnit test reports 
+				 
+				 
+Project Coordinates :: uniquley identify a project 
+
+<groupid> com </groupid>
+<artifactId> springdemo </artifactId>
+<version> 1.0 </version
+
+Corordinates for spring framework
+<groupid> org.springframework</groupid>
+<artifactId> spring-context </artifactId>
+<version> 5.0.0.RELEASE</version>
+
+2)Adding Dependency 
+To give dependency to project we need
+  a)Group ID , Artifact ID 
+  Version is optional 
+ 
+ GAV -- Group Id , Artifact ID , Version 
+ 
+ go to meven.org  we find all dependency coordiantes
+ 
+ We go to Maven-Central Repositary website --
+ we find dependency there and we add them to pom file 
+ 
+ Meven Repo --  3rd party websit e
+ 
+ ----
+ 
+ MAven Architypes
+ 
+ We use Architypes to create new Maven Projects 
+ They contain template files for Maven Project 
+ 
+ Common Archetypes -- maven-archetype-quickstart , maven-archetype-webapp 
+ 
+ 
+ MAVEN REPO
+ 
+ MAVEN WORKS :: reads pom.xml file 
+ maven reads and check if they present in local repo if not
+ goes to maven central repo & saves them locally 
+ 
+ 
+ Local Repo : ~/.m2/repository 
+ Maven search Local repo first  & the goes to central repo on net 
+ 
+ /home/sreek/.m2/repository
+It shows our all profile artifacts 
+
+
+Maven Central Repository -- view 
+https://repo.maven.apache.org/maven2
+
+https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/
+
+https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/6.0.0.Final/
+
+
+Accessing Additional Repos 
+Other Repository 
+
+We have atlassian-mail dependency to our project
+Its only present in Atlassian repo  not in central repo 
+
+Add dependency to pom.xml file 
+
+
+
+-- Private Maven Repo -- available to authorized people only 
+Host a Maven repo internally at your company
+Cloud hosted solutions also availabel 

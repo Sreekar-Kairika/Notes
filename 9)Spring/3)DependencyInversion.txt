@@ -1,0 +1,49 @@
+ Dependecy Inversion 
+ 
+ 
+ Dependency Injection (DI) is a design pattern that removes the dependency 
+ from the programming code so that it can be easy to manage and test the application. 
+ 
+ Dependency Injection makes our programming code loosely coupled
+ 
+  Dependency Inversion is what decouples your code so Spring can use 
+  Dependency Injection at run time.
+  
+  CarFactory Injects Engine Tyres Seats  to Car 
+  
+  Spring has Objects Factory , coach has other dependencys or helpers
+  factory does the work for us.
+  
+  1)Inversionof Control
+  2)Dependecny Injection 
+  
+ Different Types Of Injections
+ 1)Constructor Injection
+ 2)Setter Injection
+ 
+ Devlopment Process
+ 1)Define Dependecny Interface
+ 2)Create a construcor in class for Injections
+ 3)Configure Dependency Injection 
+ 
+ 
+ dependency is helper 
+ 
+ 2)SETTER INJECTION 
+ Inject dependency by calling setters methods
+ 
+ 
+ DEvlopment Process
+ 1)Create Setter
+ 2)Spring Configfile 
+ 
+ 
+ 
+ Injecting Literal Values 
+ we inject them using the value in XML file
+ 
+ Inject Values from Properties
+ 
+ 
+ 
+ 

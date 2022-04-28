@@ -1,0 +1,22 @@
+ 
+ Spring is much simplier than J2EE
+ 
+ Spring -- Simply Java Enterprise Application
+ 
+ Light weight Devlopment 
+ 
+ Loose Coupling -- Dependency Injection
+ 
+ Aspect Oriented Programming 
+ 
+ 
+ Minimize boilerplate Java  Code 
+ 
+ A bean is an object that is instantiated, assembled, 
+ and otherwise managed by a Spring IoC container
+ 
+ Core Container -- Has Factory for Bean Creation 
+ Beans -- 
+ Core -- 
+ SpEL - Spring Expression Language
+ Context 
