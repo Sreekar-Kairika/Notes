@@ -1,0 +1,89 @@
+ 
+ Hibernate is a frameworl for persisting/saving Java Objects in a database
+ 
+ Hibernate handles all low-level SQL
+ It minimize the amount of JDBC code you have to devlop
+ It provides Object-to-Relational Mapping
+ 
+ Mapping from Java Class to DBMS Class 
+ 
+ 
+ JDBC & Hibernate
+ Hibernate uses JDBC for all database communicaions
+ JDBC is a Abstract layer.
+ JDBC Driver is used
+ 
+ 1)ide
+ 2)Database Server
+ 3)Hibernate JAR  & JDBC Driver
+ 
+ 
+ HIBERNATE DEMO PROCESS
+ 1)Add Hibernate Config File -- add hibgernate.cfg.xml
+ 
+ 2)Annotate Java Class
+ 
+ Entitry Class -Java class that is ampped to a database table
+ ORM - Object to Relational Mapping 
+ 
+ TWO OPTIONS FOR MAPPING
+ a)XML config
+ b)Java Annotations 
+      --- Map Class to Databse Table
+	  --- Map fields to Databse Column
+ 
+ 3)Develop Java Code to process Database Operations 
+ 
+ 
+ ------------------
+ 
+ Session Factory -- Reads the hibernate confog file , creates Session Objects , 
+								Only create once in your app 
+Session  ---  Wraps a JDBC Connection	
+						Main object used to save/relative object
+						Short lived object 
+						Retrieved from Session Factory 
+						
+CRUD Operation
+
+1)Create Objects using Hibernate
+
+2)Retrieving an Object 
+-- we retrive data using Primary Key 
+
+HQL - Hibernate Query Language
+
+Similoar in nature to SQL -- where ,like ,order by, join ,in  
+
+
+3)Update Objects -- no need to create a session again 
+
+4)Delete --
+
+
+------------
+
+Advanced Mappings
+We have multiple tables & relationship between tables 
+
+Advanced Mappings :: 
+1)One-One
+2)One-Many , Many-One
+3)Many-Many 
+
+Primary Key & Foreign Keys
+Cascade
+
+Primary Key :: Identify a unique row in a table
+Foreign Key :: Link table together
+					-- a field in one table that refers to primary key in another table 
+					
+
+Cascade -- You can apply same operations to related entitys
+
+If we delete an Instructor  , we should also delete their instructor_detail
+
+If we delete a student , we remove from course but not delete course 
+
+Eager -- Retieve Everything
+Lazy -- Retieve on request 

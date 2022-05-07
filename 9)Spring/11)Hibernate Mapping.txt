@@ -1,0 +1,105 @@
+ 
+ 
+ Instructor ---> Instructor Detail 
+ Dev Process
+ 1)Define database Table
+ 2)Create Instructor & instructor Detail Class
+ 3)Create Main App
+ 
+ Entity LifeCycle 
+ 
+ Detach -- not associated with hibernate session
+ Merge -- If instance is detached from session, then merge will reattach to session 
+ Persist -- Transitions new instances to managed state 
+				  Next flush/commit will save to db
+Remove -- Transition managed entity to be removed . Next flush/commit will delete 
+					from db \
+					
+Refresh - reload data   
+
+Cascade Delete 
+
+OneToOne - Cascade Types
+
+Cascae Types
+a)PERSIST -- if entity is persisted /saved , related entity will also be persisted
+b)REMOVE
+c)REFRESH 
+d)DETACH
+e)MERGE 
+f)ALL
+
+We map
+Instructor ---> Instructor_detail
+instructor_detail_id ----> id
+
+One-One Unidirectional 
+
+@OneToOne(cascade=CascadeType.ALL)
+@JoinColumn(name="instructor_detail_id")
+ private InstructorDetail instructorDetail;
+
+--------------
+One-One BiDirectional 
+
+Cascade Delete 
+
+
+Keep Instructor but want to delete instructor_detaik
+
+
+-----------------
+
+One-to-Many Bi- directional
+An Instrcutor can have many courses 
+
+ManytoOne : Many courses can be mapped to one instructor 
+
+If we delete Instructor donot DELETE Course
+If we delete a course Donot Delete Instructor 
+
+
+Instructor ---- Course have Relation 
+
+----------------
+
+Module- 25 
+
+EAGER -- will retrieve every thing
+LAZY -- will retieve on request
+
+EAR Loading :: will load all dependent entities
+
+
+Only load data when Absolutely needed
+Prefer Lazy Loading 
+
+
+Lazy Loading will load the main entity first
+Load dependent entities on demand [lazy]
+
+Lazy Loading cannot be loaded if we close the session 
+ANS-1 :: If data is loaded when session is open , we can use it after session closing 
+
+Fetch-Join Demo::
+
+
+------------
+
+
+One-to-Many- UNI Directinal
+
+A course have many reviews 
+
+If we delete a course , we also need to delet reviews
+ 
+ ---------------
+ 
+Many-to-Many 
+
+
+A course can have many students
+
+A studnet can have many courses  relationship 
+
+We delete course & check John is not deleted 

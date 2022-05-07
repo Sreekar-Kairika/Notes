@@ -1,0 +1,137 @@
+ 
+ Spring Configuration  with Annotations
+ 
+ They are Special labels/maerkers added to Java Classes
+ Provide meta-data about the class
+ Processed at compile time or runtime 
+ 
+ @override -- its a annotation 
+ 
+ 
+ XML configuration can be verbose
+ 
+ Configure your Spring beans with Annotations
+ Annotations minimizze the XML configuration
+ 
+ 
+ --Spring will scan Java class for special annotation
+ It automatically register the beans in the Spring Container 
+ 
+ 
+ DEV PROCES
+ 1)Enable component scanning
+ 2)Add @component annotation
+ 3)Retrieve bean from container 
+ 
+ 
+ 1)EXPLICT COMPONENT 
+ 
+ @Component("thatSillyCoach") // its is EXPLICT BEAN ID 
+public class TennisCoach implements Coach {
+    @Override
+-- thatSillyCoach is the bean-id we use 
+
+
+DEFAULT BEAN ID
+
+TennisCoach -- id = tennisCoach
+
+----------------
+
+Module-8
+
+To avoid writing cod ein XML we use Autowiring 
+
+Spring Dependecny Injection with Annotations & Autowriting 
+
+Autowiring Injection
+1)Constructor
+2)setter
+3)Field
+
+1)CONSTRUCTOR INJECTION 
+
+@AutoWired is used for Constructor 
+
+2)Setter Injections with Annotations & Auto Wiring 
+
+We configure dependency injection with @Autowired Annotation 
+
+3)Field Injection 
+
+Inject dependecnies by setting filed values on your class diectly
+Even private methods
+It is Accomplished by using Java Reflection 
+
+
+place AUTOWIRED directly on filed , no need of setter method 
+
+
+----
+SPRING INJECTION TYPES 
+
+Choose a style & Stay consistent with your project 
+
+When multiple Implementations are present what will it pick 
+
+We have to pick one bean & give it t o spring -- we use QUALIFIERS
+----
+
+Module-9
+ Bean Scope with XML 
+ 
+ Default scope is Singleton -- single instance of memory 
+ 
+ Prototype -- new object for each request 
+ 
+ @Component
+@Scope("prototype")
+public class TennisCoach implements Coach {
+
+
+BEAN LIFE CYCLE METHODS 
+
+@PostConstruct & @PreDestroy
+
+PostConstruct -- code will wxecute after constructor & after injection of dependency 
+
+PreDestroy -- execute before Bean is destroyed 
+
+-----
+
+Module 10 
+
+Configure using JAVA code instead of XML 
+
+3 Ways of Configuring Spring Container
+1)Full XML Config
+2)XML Component Scan - with annotations
+3)Java Configuration 
+
+
+Devlopment Process
+1)Create Java Class
+2)Add Component Scanning support
+3)Read spring Java Configuration
+4)Retrieve bean from Spring Container 
+
+
+
+
+
+
+DEFING BEANS IN SPRING 
+
+Process
+1)Define method to expose bean
+2)Inject bean dependency
+3)Read Spring Java Configuration
+4)Retrieve bean from Spring Container 
+
+
+
+INJECT VALUES FROM A PROPERTY FILE 
+
+1)Create Property file
+2)Load Property file in Spring Config
+3)Reference values from Properties file 

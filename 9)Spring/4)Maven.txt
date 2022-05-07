@@ -60,3 +60,4 @@ Compile -- test compile -- test --package -- Integration test -- Verify -- Insta
 
 Advantages of Maven
 1) Helps in managing all the processes , such as building , docs ,releasing 
+

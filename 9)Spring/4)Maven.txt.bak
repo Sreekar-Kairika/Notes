@@ -57,3 +57,6 @@ b)Clean :: handles project cleaning
 c)Site :: handles the creation of project sites documentation 
 
 Compile -- test compile -- test --package -- Integration test -- Verify -- Install -- Deploy 
+
+Advantages of Maven
+1) Helps in managing all the processes , such as building , docs ,releasing 

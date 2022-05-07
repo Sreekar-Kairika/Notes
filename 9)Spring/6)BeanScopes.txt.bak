@@ -29,3 +29,10 @@
  WE CAN ADD CUSTOM code during BEAN INITIALIZATION
  --Calling custom business logic method
  --Setting up handles to resources [db , sockets , file etc]
+ 
+ DEv PROCESS
+ 1)Define your method init & destroy
+ 2)Config method names 
+ 
+ init-method="doMyStartupStaff"
+destroy-method="doMyCleanupStuffYoYo"

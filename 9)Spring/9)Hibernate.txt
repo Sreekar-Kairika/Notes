@@ -1,0 +1,49 @@
+ 
+ Hibernate is a frameworl for persisting/saving Java Objects in a database
+ 
+ Hibernate handles all low-level SQL
+ It minimize the amount of JDBC code you have to devlop
+ It provides Object-to-Relational Mapping
+ 
+ Mapping from Java Class to DBMS Class 
+ 
+ 
+ JDBC & Hibernate
+ Hibernate uses JDBC for all database communicaions
+ JDBC is a Abstract layer.
+ JDBC Driver is used
+ 
+ 1)ide
+ 2)Database Server
+ 3)Hibernate JAR  & JDBC Driver
+ 
+ 
+ HIBERNATE DEMO PROCESS
+ 1)Add Hibernate Config File -- add hibgernate.cfg.xml
+ 
+ 2)Annotate Java Class
+ 
+ Entitry Class -Java class that is ampped to a database table
+ ORM - Object to Relational Mapping 
+ 
+ TWO OPTIONS FOR MAPPING
+ a)XML config
+ b)Java Annotations 
+      --- Map Class to Databse Table
+	  --- Map fields to Databse Column
+ 
+ 3)Develop Java Code to process Database Operations 
+ 
+ 
+ ------------------
+ 
+ Session Factory -- Reads the hibernate confog file , creates Session Objects , 
+								Only create once in your app 
+
+Session  ---  Wraps a JDBC Connection	
+						Main object used to save/relative object
+						Short lived object 
+						Retrieved from Session Factory 
+
+
+Creating & Saving Java Objects

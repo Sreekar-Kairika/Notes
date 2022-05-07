@@ -33,3 +33,6 @@
  DEv PROCESS
  1)Define your method init & destroy
  2)Config method names 
+ 
+ init-method="doMyStartupStaff"
+destroy-method="doMyCleanupStuffYoYo"

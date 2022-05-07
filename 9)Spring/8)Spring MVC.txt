@@ -1,0 +1,178 @@
+ Spring MVC -- Framework for building Web App
+ 
+Based on Model-Spring-Controller
+ 
+We use IOC , DI in it.
+ 
+ 
+MVC BENEFITS::
+Leverage a set of reusbale UI Components 
+Manage Application State for web requestData
+ 
+ 
+COMPONENTS OF MVC APPLICATION 
+ 
+1)Web pages layout
+2)A collection of spring Beans-- Controllers , Services
+3)Spring Configuration -- XML , Annotations or Java
+ 
+ 
+Web Browser  , Front Controller , Controlleer , View Template
+ 
+Front Controller known as DispatchServlet -- we will get it from JAR file
+ 
+We create 1)Model  - data 
+			2)View -- jsp pages
+			3)Controller -- business logic
+			
+
+CONTROLLER :: code created by Devloper
+Conatins Business Logic
+Handle Request
+Store/reteive Data
+
+MODEL :: Contains data 
+Like container for shipping data 
+
+VIEW Template :: JSP + JSTL 
+JSP Java Server Page
+JSTL - JSP Standard Tag Library 
+
+Other View Templates -- Groovy , Velocity , Thymeleaf , Freemarker
+
+
+
+1)Configure Spring Dispatch Servlet 
+2)Setup URL Mapping to Spring MVC Dispathcer Servlet 
+servlet name & servelt mapping shoul be mapped 
+3)Add component scan 
+4)Adding support for conversion , formatting & validation
+5)Configuring Spring MVC View Resolver  
+
+Spring Model :: Its a container for your application
+Your view can access data from the model
+
+JSP access data from Model 
+
+
+----
+
+RequestParam -- to read the data 
+
+public String letsAddDataA(@RequestParam("studentName")String theName, Model mod
+
+Add Controller @Request Mapping 
+
+Methods inside a class works as a Relative Mapping to  Class Mapping 
+
+
+if we have a  "/showForm " -- two Mappings 
+
+Need to Resolve the Mapping
+
+
+We use the Relative Mapping here ---
+
+
+----------------
+
+Module -14 -- Form Tags
+
+Spring MVC Form tags can make use of Data binding 
+
+TEXTFields -- 
+
+<form:form action="processForm" modelAttribute="student" >
+
+        First Name :<form:input path="firstName" />
+        <br><br>
+        Last Name :<form:input path="lastName" />
+        <br><br>
+
+        <input type="submit" value="Submit" />
+
+    </form:form>
+	
+	When they set they call setFirstName -- for above
+
+DROPDOWN LIST
+
+
+RADIO Buttons
+
+<form:select path="country">
+            <form:options items="${student.countryOptions}" />
+</form:select>
+
+CHECK BOXES :: use jsp looping to get all the data 
+
+-----------------------------------
+
+FORM VALIDATION 
+
+Java has a standard Beqan Validation API 
+
+We add Valiation JAR files 
+
+
+Hiberate started as ORM - Object Related Model used for Validation 
+
+
+DEV PROCESS
+1)Download Validation JAR files from Hibernate website
+2)Add JAR files to project 
+
+
+@NotNull
+@Size(min=1,message = "is required")
+ private String lastName;
+ 
+ 
+ Our Validation fails -- if we give white spaces
+ 
+ 
+ @InitBinder
+ 
+ This annotations is a pre-process , method annoated with InitBinder 
+ InitBinder -- removes the leading & trailing zeros
+ 
+ It will be called for every WEB REQUEST coming from controller
+ 
+    //add an initBinder
+    //remove leading & trailing whitespaces
+    //resolve issue for out validation
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder){
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        dataBinder.registerCustomEditor(String.class,stringTrimmerEditor);
+    }
+	
+---
+Validate a Number
+
+@MIn , @Max 
+    @Max(value=10 , message = "must be less than or equal to 10")
+    @Min(value=0 , message = "must be greater than or equal to 0")
+    private int freePasses;
+
+
+--------------
+
+Validation with Regular Expression 
+
+@Pattern(regexp = "^[a-zA-Z0-9]{5}",message="only 5 char/digit")
+    private String postalCode;
+	
+	
+Make Integer form Required
+
+Refactor int ---> Integer 
+
+But it fails if we enter Alphabets
+
+
+--------------------
+
+Custom Validation 
+
+We Create our own Custom Annotation  
