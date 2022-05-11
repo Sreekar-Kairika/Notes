@@ -20,16 +20,6 @@ src/main/webapp -- Web App is used
 	 -- No more msiing JAR files 
 	 
 	 
- 1)Creating resource file not mentioned in Video
- 
- 2)properties file placing 
- 
- 3)Literal Injection from property file 
-    sol:: adding some headers in beans
-	
-	
-4)Maven Installation 
-
 
 pom.xml file ::
 pom stands for Project Object File
@@ -112,4 +102,4 @@ Add dependency to pom.xml file
 
 -- Private Maven Repo -- available to authorized people only 
 Host a Maven repo internally at your company
-Cloud hosted solutions also available 
+Cloud hosted solutions also available  

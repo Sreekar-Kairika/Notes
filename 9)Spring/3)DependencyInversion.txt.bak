@@ -6,6 +6,9 @@
  
  Dependency Injection makes our programming code loosely coupled
  
+  Dependency Inversion is what decouples your code so Spring can use 
+  Dependency Injection at run time.
+  
   CarFactory Injects Engine Tyres Seats  to Car 
   
   Spring has Objects Factory , coach has other dependencys or helpers

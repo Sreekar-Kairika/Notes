@@ -1,0 +1,102 @@
+ 
+
+Read Method Arguments for -- Join Points 
+
+1)Access & Display Method Signature & Arguents 
+
+JoinPoint 
+
+Method Signature shows the Absolute path & Method called in the Aspect 
+
+public void beforeAddAccountAdvice(JoinPoint theJoinPoint) {
+        System.out.println(" Executing Advice @Before  ");
+
+        //display the method signature
+        MethodSignature methodSig = (MethodSignature) 	
+        theJoinPoint.getSignature();
+
+        //display method arguments
+        System.out.println("Method : " +methodSig );
+        
+        
+        }
+        
+METHOD PARAMETERS 
+
+ Object[] args = theJoinPoint.getArgs();
+        //loop through args
+        for(Object tempArgs:args){
+            System.out.println(tempArgs);
+            if(tempArgs instanceof Account){
+                Account theAccount = (Account) tempArgs;
+
+                System.out.println("account name "+theAccount.getName());
+                System.out.println("account level "+theAccount.getLevel());
+
+            }
+        }
+    }
+    
+    ------------
+    
+    1)Before Advice
+    2)Point cut
+    3)JoinPoints
+    
+    4)After Returning
+    5)After Throwing
+    ------------
+    AFTER RETURNING :: runs after the method --success execution
+    
+    Usecase -- Logging Security Transaction 
+    
+    Post Process the Data -- 
+    
+    
+    After execution of a method , After Return is executed & then
+    normal flow of program continous
+    
+    
+    Post Procees the data , before returning it
+    But is danger , we may change the data 
+    
+  ----------------------
+  
+  After Throwing Advice:: run after method -- if exception thrown 
+  
+  Logging the exception
+  
+  -------------------
+  
+  After Advices::
+  
+  After will afterv FINALLY 
+  It executed if Program is SUCCESSFUL or EXCEPTION OCCURED 
+  
+  ----------------
+  
+   Around -- run before & after method execution 
+   
+   Logging , Auditing , Security
+   
+   Pre-processing & post-processing data
+   
+   We use ProceedingJoin Points to handle the Target Object. 
+   
+   
+  -------------
+  
+  Around Advice -- Handling Exception 
+   1)You can Handle / stop the exception
+   2)Simoly rethrow the exception
+  
+  If Exception is caused & its not handled we get error
+  Our Main App knows about the Exception 
+  
+  If exception is handled , we get the around after output 
+  
+------------
+
+Around Advice Rethrow Exception 
+    
+    

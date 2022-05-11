@@ -20,9 +20,12 @@ Not cleared
 
 8)Java Annotations 
 
-
+mvc -- add two jar files from maven
 
 Hibernate
 
 In database establishment make it to medium
 Hibernate starting -- Add files in pom.xml
+
+
+

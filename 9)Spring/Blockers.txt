@@ -13,7 +13,7 @@
 
 6)Pulling files from other repso --  atlassian ]
 
-
+ 
 Not cleared
 
 7)Bean Scope -- PreConstruct 
@@ -26,3 +26,6 @@ Hibernate
 
 In database establishment make it to medium
 Hibernate starting -- Add files in pom.xml
+
+
+

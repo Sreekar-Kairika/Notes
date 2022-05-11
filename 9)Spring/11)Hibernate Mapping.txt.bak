@@ -100,5 +100,6 @@ Many-to-Many
 
 A course can have many students
 
-A studnet can have many courses 
-elationship 
+A studnet can have many courses  relationship 
+
+We delete course & check John is not deleted 

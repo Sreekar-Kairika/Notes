@@ -103,3 +103,7 @@ A course can have many students
 A studnet can have many courses  relationship 
 
 We delete course & check John is not deleted 
+
+Delete a course & check student is not deleted 
+
+Delete a Student  & check course is not deleted  

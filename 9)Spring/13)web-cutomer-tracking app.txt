@@ -1,0 +1,105 @@
+ 
+ 1)Establishing Data base connection using servlet
+ 
+ 
+ 2)web.xml file & mvc-crud-demo-servlet.xm 
+ 
+ Add thses files
+ 
+ 3)Update & Keep all JAR files in lib
+ 
+ 4)Update pom.xml files 
+ 
+ 
+ Configuration for Spring + Hibernate
+ 
+ 1) Define database dataSource / connection pool
+ 2)Setup Hibernate session factory
+ 3)Setup Hibernate Transaction Manager
+ 4)Enable configuration of transactional Manager
+ 
+ 
+ ---
+ 
+ DAO - Data Access Object 
+ 
+ DAO is helper class used for talking with Database 
+ 
+ ListCustomer Dev Process
+ 
+ 1)Create entity for Constumer
+ 2)Create CustomerDAO and CustomerDAOImpl
+ 3)Create Customer Controller
+ 4)Create JSP Page 
+ 
+ ----
+ DAO needs a Hibernate Session Factory 
+ Session Factory needs a Data Source 
+ DataSource establish connection with Database 
+ 
+ We use Auowired dependency Injection for Injecting bean-id of session factory 
+ 
+ Spring provued @Transactional annotation
+ 
+ It Automagically begin & end a transaction for your code
+   -- No need for you to explicitly do this in your code 
+ 
+ 
+ We no need to use 
+ session.beginTransaction()   & end Spring will take care of it for us
+ 
+ 
+ @Repository --
+ 
+ @Component -- Java Beans -- Track Coach
+ 
+ @Controller -- Spring MVC
+
+ @Repository -- DAO Implementation 
+ 
+ Controller & Reposotiary are sub classes of Component
+ So they are  availabe for auto scanning 
+ 
+ 
+ 
+ ------
+ 
+ Moduel -30
+ 
+ GetMapping &  PostMapping 
+ 
+ Get -- form data is added to end of URL as name/value pair
+ 
+ 
+ Services with @Service Annotation 
+ 
+ Customer Service Layer between Customer Controller & Customer DAO
+ 
+ Its a Service Facade Design Pattern 
+ 
+ @Service is also sub class of Component 
+ 
+ ----
+ 
+ Add a Customer 
+ 
+ Create a custome rbutton & make a jsp page for it.
+ 
+ Creating customer-list.jsp
+ 
+ Process Form Data 
+ Controller --> Service --> DAO --> Database 
+ 
+ 
+ ------
+ 
+ Update
+ 
+ 
+ 
+ ------------
+ 
+ Delete 
+ 
+ Add Delete link
+ 
