@@ -1,0 +1,133 @@
+ 
+
+Spring Security :: defines a frame work for security
+
+Implemented using Servlet Filters
+
+Servlet Filters are used to Pre-Prcess/ Post Process 
+
+
+SECURIT CONCEPTS
+1)Authentication -- check user id & password with credentials
+
+2)Authorization -- Check if user has Authorized Role
+
+
+
+1)Declarative -- All Java Config or XML 
+
+Different Login Methods
+1)HTTP Basic Authentication
+
+2)Default Login Form 
+
+3)Custom Login Form 
+
+
+
+Add Maven dependencies for Spring Security 
+1)Spring-security-web
+2)spring-security-config
+
+to the pom.xml  file
+
+
+---
+
+User Login is based on Web Browser Session 
+If we use Another Browser we have to login again
+ 
+ 
+ 
+Spring Security Filters
+
+
+We create our own CUSTOM LOGIN FORM
+
+
+DEV Proceess
+1)Modify Spring Configuration Reference Custom Login Form
+2)Devlop a Controller
+3)Create A custom file 
+
+
+---------
+
+Bootstrap Login page 
+
+
+------
+
+Logout -- Clear the Browser Session & return Login Page 
+
+Spring Handles About the Log out for use
+
+--------------
+
+Module 51 -- CROSS SITE REQUEST FORGERY 
+
+<form:form> -- we use it for automatic support for security defenses.
+
+Spring protects from CSRF
+
+If we dont use <form:form> --  we get 403 Error -- Invalid _csrf token
+
+We manually Add csrf token
+
+<input type="hidden"
+                     name="${_csrf.paramaterName}"
+                    value="${_csrf.token}"
+                    </input>
+					
+----------
+
+Displaying User Id & Roles 
+
+Add - spring-security-tablibs 
+
+-------------
+
+Restrict Accsess Based On ROLES 
+
+
+DEV Process
+
+1)Create supporting Controller Code & views
+2)Upadte user roles
+3)Restrict Access based on Roles
+
+
+403 --  Access Forbidden  -- User Restricted 
+
+
+-------------
+
+
+Display Content Based On Roles 
+
+Manager should only -- See the Manager Meeting Links 
+
+Use Spring Security JSP tags to show specfic content
+
+--------------
+
+USer Accounts Stored In Database 
+
+Out of box -- Spring Security Can Read User Account 
+info from Database 
+
+By default Spring Security has predefined Table schema 
+
+1)Dev SQL script to setup
+2)Add databse support to Maven pom file
+3)Create JDBC property file
+4)Define Data Scource in Spring Configuration 
+
+
+a)Plain Text Passwords
+b)bcrypt -- password hashing 
+
+
+-----------------
+
+Security with Password Encryption 

@@ -45,6 +45,9 @@ METHOD PARAMETERS
     
     4)After Returning
     5)After Throwing
+	
+	6)After Advice
+	7)Around 
     ------------
     AFTER RETURNING :: runs after the method --success execution
     
@@ -98,5 +101,7 @@ METHOD PARAMETERS
 ------------
 
 Around Advice Rethrow Exception 
+
+
     
     
