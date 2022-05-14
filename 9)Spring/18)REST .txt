@@ -1,0 +1,144 @@
+
+To Get Weather Service
+
+We can make REST API calls over HTTP
+
+REST -- Representational State Transfer
+
+Communication approach b/w Programs
+
+
+We commonly use XML & JSON
+
+JSON stands for JavaScript Object Notation
+
+
+We use API Documentation to use the API.
+
+Weather App , Currency Converter App 
+My Movie App 
+
+REST API , REST WEb Services , RESTful Services
+
+--------
+
+JAVA JSON DATA BINDING 
+
+Data binding is the process of converting JSON data
+to a Java POJO
+
+POJO - Plain Old Java Object
+
+JACKSON handles data binding between JSOn & Java POJO 
+
+
+
+JSON to Java  POJO --
+
+We call Setter Methods on POJO 
+
+Soring behind the Sceneces does , it have to map JSON
+data to Java Class
+
+
+
+Java POJO to JSON ---
+
+We call Getter methods on POJO 
+
+
+JSON data being passed to REST controller is converted
+ to POJO
+
+Java Object being returned from REST controller is 
+converted to JSON -- happens using JACSON Automatically
+
+-----------
+
+
+DEV PROCESS 
+
+1)Add JAckson Dependency 
+
+  ObjectMapper mapper = new ObjectMapper();
+            
+  Student theStudent = mapper.readValue
+  (new File("data/sample-full.json") , Student.class);
+            
+			
+			
+If JSON has property we dont care it would be Great 
+Like we gett error if student has no filed
+
+Ex :: @JsonIgnoreProperties(ignoreUnknown = true)
+
+--------------
+
+REST HTTP Basics
+
+Most common use of REST is over HTTP
+
+Leverage methods for CRUD operations 
+
+POST - Create a new entity 
+GET - Read a list of entities
+PUT - Update an existing entity
+DELETE - Delete an existing entity 
+
+  
+Request Message 
+a)Reqquest Linr :: HTTP command
+b)Header Variable :: Request metadata
+c)Meassage body :: contents of message 
+
+Response Line
+a0Response Line
+b)Header Variable
+c)Message Body 
+
+
+100-199 -- Informational
+200-299 -- Successful
+300-399 -- Redirectional
+400-499 -- Client Error
+500-599 -- Server Error 
+
+
+We need a Client Tool to see HTTP request 
+
+Download Postman -- test om jsontest website 
+
+
+--
+
+Devlop a Spring REST Controller
+
+1)Add Maven & Jacson dependency
+2)Add code for All Java Config :: Configuration -- No XML
+3) Add code for Servlet Initializer
+4)Create Spring REST Servcie @RestController
+
+
+------------------
+
+REST on Students 
+
+Jackson takes care of converting JSON to POJO & vice vers
+
+
+Sprig Rest takes care of
+
+Converting POJO to JSON at REST END POINT 
+
+-------------
+
+Module - 60
+
+Spring Rest Path Variable
+GET /api/students/{studentId} -- Retrieve a 
+							single student 
+
+
+DEV PROCESS
+1)Add request Mapping to Spring REST Service
+-- Bind path variable to method using @PathVariable 
