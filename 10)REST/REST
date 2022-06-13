@@ -1,0 +1,32 @@
+
+REPRESENTATIONAL STATE TRANSFER
+
+It is platform independent , should follow standard protocols
+
+URI - Uniform Resource Identifier
+
+GET -- Get response from specified URI
+
+POST -- Creates a new resource at specified URI
+
+PUT -- Creates or replaces the resource at specified URI
+
+DELETE -- Removes resource at specified URI
+
+PATCH -- Performs partial Update of a resource
+
+Naming Convention::
+
+/users/{id} -- used
+getUsers -- not prefered
+
+--> use lower cases
+
+Resource -- It is the primary data representation
+
+
+
+
+
+ 
+

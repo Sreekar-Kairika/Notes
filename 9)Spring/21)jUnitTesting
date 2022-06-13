@@ -1,0 +1,27 @@
+
+Unit Test
+
+We try test a single method  or a specifi cgroup of methods
+
+
+Asserting Values
+
+
+assertEquals("ABC","ABC");
+//(expectedValue,ActualValue)
+
+expected ABC but we got ABCD -- test fails
+
+assertTrue() -- we expect TRUE , if we get true its is passed else failed
+
+assertFalse()
+
+
+@Before
+
+@After
+
+3e12049199a44f7bf8a183aa53f744232772972
+
+
+mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sreekarkairika

@@ -29,7 +29,7 @@ to a Java POJO
 
 POJO - Plain Old Java Object
 
-JACKSON handles data binding between JSOn & Java POJO 
+JACKSON handles data binding between JSON & Java POJO 
 
 
 
@@ -142,3 +142,25 @@ GET /api/students/{studentId} -- Retrieve a
 DEV PROCESS
 1)Add request Mapping to Spring REST Service
 -- Bind path variable to method using @PathVariable 
+
+
+------------
+
+Exception Handling :: Handle exception & 
+			return error as JSON 
+			
+-----------------
+
+Module - 63
+
+
+CRUD REAL TIME PROJECT 
+
+
+GET  -- Read Data  
+
+POST -- create a new Customer
+
+PUT -- Update an Existing Customer 
+
+DELETE -- Delete existing customer

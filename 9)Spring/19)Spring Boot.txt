@@ -1,0 +1,59 @@
+ 
+Command Line Running of JAR Applications 
+
+1)--
+./mvnw package -- to create a jar file 
+
+java -jar applicationName.jar 
+
+--
+
+2)
+
+./mvnw spring-boot:run
+
+Running using Maven Plugin
+
+---
+
+Using Hibernate 
+
+
+----------
+
+USing JPA 
+
+
+--------------
+
+Spring Data JPA -- Most used
+
+Provide all CRUD features
+
+
+Create a DAO & just plugin Entity type & Primary key , spring-boot
+provides you crud features 
+
+Spring Data JPA providees the interface : JpaRepository
+
+-----------
+
+Spring Data REST -- 
+
+----
+
+Configuration -- change resource path
+Pagination --elements in page 
+
+spring.data.rest.base-path=/magic-api
+
+spring.data.rest.default-page-size=3
+
+
+http://localhost:8080/magic-api/members?sort=lastName,desc
+
+------------------
+
+1)Yesterday I worked on spring boot application , left with few functionalitys
+2)Today I will complete application , & go through testing tutorials
+3)No blockers as of now

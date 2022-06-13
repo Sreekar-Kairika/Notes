@@ -1,0 +1,101 @@
+WEB SERVICES 
+
+TCP - networking protocol
+HTTP -- HyperText Text Transfer Protocol
+
+
+
+Invoke -- Method Call 
+
+
+SOAP -- Simple Object Access Protocol 
+It uses XML 
+
+WSDL - Web Service Description Language
+
+Binding 
+
+UDDI -- Universal Description & Discovery Integration
+
+
+WS - Security
+
+
+BPEL -- Business Process execution Langauage
+Composite services build with other Services 
+
+===================
+
+SOAP -- Simple Object Access Protocol 
+
+We use XML to recieve & send message
+
+Organize -- Request & Responses
+
+SOAP is structure of message 
+
+RPC is common style for SOAP Invocations
+
+
+SOAP can be sent using HTTP Post 
+
+Message Patterns
+1)Request-Responses
+2)Solicit Responses 
+3)One Way -- No response expected, Blog , Weather Notification 
+4)
+
+SOAP messages are State Less
+
+
+As SOAP has many disadvanatges , we replace it by RESTful 
+
+
+
+
+
+===================
+
+WSDL -- Web Service Description Language
+
+Service  Description Language
+
+It is Robust Modular & Extensible
+
+Tells us how to interact & invoke methods
+
+Devloped by Microsoft & IBM 
+
+Binding with Endpoints & URIs
+
+==================
+
+Service Publication & Discovery  -- UDDI 
+
+
+Web Services should be PUBLISHED & DISCOVERED
+
+
+Publishing Framwork -UDDI 
+Universal Description Discovery Integration
+
+
+UDDI brings Service Providers & Requesters Together 
+
+
+ServiceProviders publish their service in UDDI
+Service provides sees & uses it 
+
+
+UDDI assigns a serive a URI -- Universal Resource Identification
+
+We have White Yellow & Green Pages 
+
+===================
+Service Compostion -- Consists of many services 
+
+Based on Request , it uses other services and respond with
+appropriate services.
+
+BPEL -- Business Process execution Langauage
+

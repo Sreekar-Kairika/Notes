@@ -1,0 +1,115 @@
+
+Service Oriented Architecture  -- 
+modularity & service independent & extensibility & code reuse
+
+Web serives are used over Internet 
+
+======
+
+SERVICES OF PRINCIPLES 
+
+
+1)Modular -- loosely coupled , code resuablility 
+
+2) Composable -- able to combine with other Applications
+                  easily 
+				  
+3)Platform & Language Independent 
+				  
+4)Self-Describing -- 
+
+5)Self-Advertising 
+		
+=====
+
+Web System Evolutions 
+
+	
+ARPANET --- used in usa in 1969 to share information 
+over a network 
+
+
+HTML -- Hyper Text Markup Langauge
+
+Static web pages -- publications & bolgs
+They are stored in the server
+
+1993 -- Dynamic Web Page
+It is generated at time of Access
+It is easy to change things in Dynamic Web Pages
+
+
+ ------------------
+ 
+ Web System Architecture 
+ 
+ 
+ Web Browser ---- Web Server --- Application Server ---- Database
+ 
+ No Application Server -- for static web pages 
+ 
+ Application Server is used for Dyanmic Web page Loading 
+ 
+ 
+------------------------
+
+ HTML& XML -- Markup Languages 
+ They relay on Tags 
+ No programming syntax
+ 
+ HTML -- focuses on strcuture not on styling 
+ 
+ 
+ XML -- eXtensible Markup Langauge 
+ Used to store & Transport data 
+ Send data in a Web Based System 
+ 
+ JSON -- Light Weigth
+ Store & Transport Data 
+ Popular
+ Name,Value pairs 
+ 
+ ---------------
+ 
+ HTTP -- Hyper Text Tranfer Protocol
+ 
+ HTTP is a protocol that dictates how information is transferred across
+ the internet 
+ 
+ 
+ URI -- Universal Resource Identifiers
+ Address uswd to Idenetity Resource 
+ 
+ URL -- Universal Resource Location
+ URL subset of URI 
+ 
+ DNS -- Domain Name Sysstem
+ 
+ 
+ HTTP is built on TCP
+ TCP -- Transmission Control Protocol
+ TCP is Reliable. Ordered, Connection Oriented 
+ 
+ 
+----------------
+ 
+ Java Script -- It is embedded in script tag
+ It is Intrepreted Language 
+ 
+------------
+
+RPC -- Remote Procedure Call 
+
+System communicate with each other over a network
+
+In RPC we have a Client & Server 
+They communicat eusing Interface Defination Language 
+
+
+RPC uses Procedures
+
+-------------
+
+Object Brokers
+
+New Systems are build to take advantage of OOPs

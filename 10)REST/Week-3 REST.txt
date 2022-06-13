@@ -1,0 +1,117 @@
+ 
+REST Services 
+
+REpresentational State Transfer
+
+It is a Resquest-Respose Architecture 
+
+
+REST has 5 features
+
+
+1)Client-Service Architecture 
+  Highly Scalable
+
+
+2)Layered System
+  Resuablility
+  Layers can be added or removed
+ 
+3)Stateless
+ Server doesnt store Current Client state or
+ previous request made
+ 
+ Each Request is Independent of each other
+
+4)Cache
+  Client can keep a Local copy of server for temporary
+  
+5)Uniform Interface -- for Clinets &  server
+
+ GET POST PUT DELETE methods 
+ 
+
+-----------
+
+
+DESIGINING  A REST API 
+
+1)Use only Nouns
+
+/students
+/students/SID
+
+-- Dont use /studentsgetall
+
+
+PUT POST DELETE are used to manipulate the resources
+
+
+shows relaion ship in url
+
+students/3/courses
+
+Use HTTP headers to specify Input & Output Format 
+
+content-type -- application/json
+
+Filtering & Paging to APIS 
+
+GET courses?department=computer+science
+
+
+
+Version your API 
+
+Provide proper HTTP status code
+
+200 -- working properly 
+
+201 -- resources successfully created 
+204 -- resource successfully deleted 
+
+---
+
+Jersey helps us to create RESTful API's and 
+we deploy a API using Apache or something
+
+
+
+========================
+
+
+Micro Services 
+
+Large Monlothic Application -- hard to maintain & scale
+				-- suffered from performance issues 
+                -- long time to devlop 
+
+As a solution to this
+
+SOA - Service Oriented Architecture is devloped
+
+SOA provides principles to guide devlopers to break
+their application 
+Managable Lossley Coupled 
+
+
+MicroService is built to perform a single Independent task 
+
+ex:Impleneted a search feature
+Independent of each other 
+
+Finally they are composed to form a Full Application
+
+They dont follow Layerd Architecture always 
+
+Micro services controls & manages its own data 
+
+Micro Services can be replicated, If one copy fails then
+other copy can work without any service interpretion 
+
+
+
+An Application which consists of Micro Services is 
+Asynchronous
+
+Micro Services can be local or remote or both 
